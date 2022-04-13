@@ -1,0 +1,82 @@
+﻿@model IEnumerable<DoAn.Models.NhanVien>
+
+@{
+    ViewBag.Title = "ShowEmployee";
+    Layout = "~/Views/Shared/_LayoutPageC.cshtml";
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+}
+<h2 style="color:red">@Html.ActionLink("Trang chủ", "Admin", "Admin")</h2>
+<h2>Tất cả các nhân viên</h2>
+
+<p>
+    @Html.ActionLink("Tạo mới nhân viên", "createEm")
+</p>
+<table class="table" style="table-layout">
+    <tr>
+        <th>
+            Mã nhân viên
+        </th>
+        <th>
+            Tên nhân viên
+        </th>
+        <th>
+            Ngày sinh
+
+        </th>
+        <th>
+            Địa chỉ
+        </th>
+        <th>
+            Ngày vào làm
+        </th>
+        <th>
+            Hình ảnh
+        </th>
+        <th>
+            Lương nhân viên
+        </th>
+        <th>
+            Công việc
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.maNV)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.tenNV)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ngaysinh)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.diaChi)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ngayVaoLam)
+            </td>
+            <td>
+               <img src="~/Assets/images/@item.hinhanh" width="100" height="100" />
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.luong)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.chucVu.tenCV)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
+                @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+                @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+            </td>
+        </tr>
+    }
+
+</table>

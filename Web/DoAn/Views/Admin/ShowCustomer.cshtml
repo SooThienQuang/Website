@@ -1,0 +1,43 @@
+﻿@model List<DoAn.Models.account>
+@{
+    ViewBag.Title = "ShowCustomer";
+    Layout = "~/Views/Shared/_LayoutPageC.cshtml";
+}
+
+<h2>ShowCustomer</h2>
+<table style="table-layout">
+    <tr>
+        <th>
+            Tên khách hàng
+        </th>
+        <th>
+           Email
+        </th>
+        <th>
+          Password
+        </th>
+      
+       
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.HovaTen)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.email)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.pass)
+            </td>
+            <td>
+                @Html.ActionLink("Khóa tài khoản", "updateEmployees", new { id = item.email }) |
+                @Html.ActionLink("Reset password", "Details", new { /* id=item.PrimaryKey */ }) |
+                @Html.ActionLink("Xóa", "Delete", new { /* id=item.PrimaryKey */ })
+            </td>
+        </tr>
+    }
+
+</table>

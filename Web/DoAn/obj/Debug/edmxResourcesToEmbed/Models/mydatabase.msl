@@ -1,0 +1,118 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="MVC_demoModelStoreContainer" CdmEntityContainer="MVC_demoEntities">
+    <EntitySetMapping Name="accounts">
+      <EntityTypeMapping TypeName="MVC_demoModel.account">
+        <MappingFragment StoreEntitySet="account">
+          <ScalarProperty Name="maCV" ColumnName="maCV" />
+          <ScalarProperty Name="pass" ColumnName="pass" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="HovaTen" ColumnName="HovaTen" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Carosels">
+      <EntityTypeMapping TypeName="MVC_demoModel.Carosel">
+        <MappingFragment StoreEntitySet="Carosel">
+          <ScalarProperty Name="hinhAnh" ColumnName="hinhAnh" />
+          <ScalarProperty Name="MaChuDe" ColumnName="MaChuDe" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CHITIETTBs">
+      <EntityTypeMapping TypeName="MVC_demoModel.CHITIETTB">
+        <MappingFragment StoreEntitySet="CHITIETTB">
+          <ScalarProperty Name="chitiet" ColumnName="chitiet" />
+          <ScalarProperty Name="HINHANH6" ColumnName="HINHANH6" />
+          <ScalarProperty Name="HINHANH5" ColumnName="HINHANH5" />
+          <ScalarProperty Name="HINHANH4" ColumnName="HINHANH4" />
+          <ScalarProperty Name="HINHANH3" ColumnName="HINHANH3" />
+          <ScalarProperty Name="HINHANH2" ColumnName="HINHANH2" />
+          <ScalarProperty Name="HINHANH1" ColumnName="HINHANH1" />
+          <ScalarProperty Name="pinxac" ColumnName="pinxac" />
+          <ScalarProperty Name="sim" ColumnName="sim" />
+          <ScalarProperty Name="bonho" ColumnName="bonho" />
+          <ScalarProperty Name="ram" ColumnName="ram" />
+          <ScalarProperty Name="chip" ColumnName="chip" />
+          <ScalarProperty Name="cameratruoc" ColumnName="cameratruoc" />
+          <ScalarProperty Name="Camerasau" ColumnName="Camerasau" />
+          <ScalarProperty Name="HDH" ColumnName="HDH" />
+          <ScalarProperty Name="MANHINH" ColumnName="MANHINH" />
+          <ScalarProperty Name="GIATHANH" ColumnName="GIATHANH" />
+          <ScalarProperty Name="TENTB" ColumnName="TENTB" />
+          <ScalarProperty Name="MATB" ColumnName="MATB" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="chucVus">
+      <EntityTypeMapping TypeName="MVC_demoModel.chucVu">
+        <MappingFragment StoreEntitySet="chucVu">
+          <ScalarProperty Name="tenCV" ColumnName="tenCV" />
+          <ScalarProperty Name="maCV" ColumnName="maCV" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HangSanXuats">
+      <EntityTypeMapping TypeName="MVC_demoModel.HangSanXuat">
+        <MappingFragment StoreEntitySet="HangSanXuat">
+          <ScalarProperty Name="TENHSX" ColumnName="TENHSX" />
+          <ScalarProperty Name="MAHSX" ColumnName="MAHSX" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HOADONs">
+      <EntityTypeMapping TypeName="MVC_demoModel.HOADON">
+        <MappingFragment StoreEntitySet="HOADON">
+          <ScalarProperty Name="thoiGian" ColumnName="thoiGian" />
+          <ScalarProperty Name="soLuong" ColumnName="soLuong" />
+          <ScalarProperty Name="MATB" ColumnName="MATB" />
+          <ScalarProperty Name="hinhThucTT" ColumnName="hinhThucTT" />
+          <ScalarProperty Name="tinhTP" ColumnName="tinhTP" />
+          <ScalarProperty Name="quanHuyen" ColumnName="quanHuyen" />
+          <ScalarProperty Name="diachi" ColumnName="diachi" />
+          <ScalarProperty Name="hoten" ColumnName="hoten" />
+          <ScalarProperty Name="sodienthoai" ColumnName="sodienthoai" />
+          <ScalarProperty Name="mail" ColumnName="mail" />
+          <ScalarProperty Name="maHD" ColumnName="maHD" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="loaiTBs">
+      <EntityTypeMapping TypeName="MVC_demoModel.loaiTB">
+        <MappingFragment StoreEntitySet="loaiTB">
+          <ScalarProperty Name="tenLoai" ColumnName="tenLoai" />
+          <ScalarProperty Name="loaiTB1" ColumnName="loaiTB" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="NhanViens">
+      <EntityTypeMapping TypeName="MVC_demoModel.NhanVien">
+        <MappingFragment StoreEntitySet="NhanVien">
+          <ScalarProperty Name="soDT" ColumnName="soDT" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="maCV" ColumnName="maCV" />
+          <ScalarProperty Name="luong" ColumnName="luong" />
+          <ScalarProperty Name="hinhanh" ColumnName="hinhanh" />
+          <ScalarProperty Name="ngayVaoLam" ColumnName="ngayVaoLam" />
+          <ScalarProperty Name="diaChi" ColumnName="diaChi" />
+          <ScalarProperty Name="ngaysinh" ColumnName="ngaysinh" />
+          <ScalarProperty Name="tenNV" ColumnName="tenNV" />
+          <ScalarProperty Name="maNV" ColumnName="maNV" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="THIETBIs">
+      <EntityTypeMapping TypeName="MVC_demoModel.THIETBI">
+        <MappingFragment StoreEntitySet="THIETBI">
+          <ScalarProperty Name="MAHSX" ColumnName="MAHSX" />
+          <ScalarProperty Name="LOAITB" ColumnName="LOAITB" />
+          <ScalarProperty Name="SOLUONG" ColumnName="SOLUONG" />
+          <ScalarProperty Name="HINHANH" ColumnName="HINHANH" />
+          <ScalarProperty Name="GIATHANH" ColumnName="GIATHANH" />
+          <ScalarProperty Name="TENTB" ColumnName="TENTB" />
+          <ScalarProperty Name="MATB" ColumnName="MATB" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

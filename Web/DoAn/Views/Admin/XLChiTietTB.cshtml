@@ -1,0 +1,182 @@
+﻿@model DoAn.Models.CHITIETTB
+
+@{
+    Layout = "~/Views/Shared/_LayoutPageC.cshtml";
+}
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>XLChiTietTB</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <script src="~/Scripts/jquery-1.8.2.min.js"></script>
+    <script src="~/Scripts/jquery.validate.min.js"></script>
+    <script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
+    
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+        @Html.ValidationSummary(true)
+    
+<fieldset>
+    <legend>CHITIETTB</legend>
+
+    <div class="editor-label">
+        Mã thiết bị
+    </div>
+    <div class="editor-field">
+        <input id="StudentName" name="txtmatb" type="number" value="@ViewBag.ID" disabled="disabled" />
+    </div>
+
+    <div class="editor-label">
+        Tên thiết bị
+    </div>
+    <div class="editor-field">
+        @Html.TextBoxFor(model => model.TENTB, new { @class = "form-control" })
+        @Html.ValidationMessageFor(model => model.TENTB)
+    </div>
+
+    <div class="editor-label">
+        Giá thành
+    </div>
+    <div class="editor-field">
+        @Html.TextBoxFor(model => model.GIATHANH, new { @class = "form-control" })
+        @Html.ValidationMessageFor(model => model.GIATHANH)
+    </div>
+
+    <div class="editor-label">
+        Màn hình
+    </div>
+    <div class="editor-field">
+        @Html.TextBoxFor(model => model.MANHINH, new { @class = "form-control" })
+        @Html.ValidationMessageFor(model => model.MANHINH)
+    </div>
+
+    <div class="editor-label">
+        Hệ điều hành
+    </div>
+    <div class="editor-field">
+        @Html.TextBoxFor(model => model.HDH, new { @class = "form-control" })
+        @Html.ValidationMessageFor(model => model.HDH)
+    </div>
+
+    <div class="editor-label">
+        Camera sau
+    </div>
+    <div class="editor-field">
+        @Html.TextBoxFor(model => model.Camerasau, new { @class = "form-control" })
+        @Html.ValidationMessageFor(model => model.Camerasau)
+    </div>
+
+    <div class="editor-label">
+        Camera trước
+    </div>
+    <div class="editor-field">
+        @Html.TextBoxFor(model => model.Camerasau, new { @class = "form-control" })
+        @Html.ValidationMessageFor(model => model.cameratruoc)
+    </div>
+
+    <div class="editor-label">
+        Vi sử lý (Chip)
+    </div>
+    <div class="editor-field">
+        @Html.TextBoxFor(model => model.chip, new { @class = "form-control" })
+        @Html.ValidationMessageFor(model => model.chip)
+    </div>
+
+    <div class="editor-label">
+        Ram
+    </div>
+    <div class="editor-field">
+        @Html.TextBoxFor(model => model.ram, new { @class = "form-control" })
+        @Html.ValidationMessageFor(model => model.ram)
+    </div>
+
+    <div class="editor-label">
+        Bộ nhớ trong
+    </div>
+    <div class="editor-field">
+        @Html.TextBoxFor(model => model.bonho, new { @class = "form-control" })
+        @Html.ValidationMessageFor(model => model.bonho)
+    </div>
+
+    <div class="editor-label">
+        Sim
+    </div>
+    <div class="editor-field">
+        @Html.TextBoxFor(model => model.sim, new { @class = "form-control" })
+        @Html.ValidationMessageFor(model => model.sim)
+    </div>
+
+    <div class="editor-label">
+        Dung lượng Pin, xạc
+    </div>
+    <div class="editor-field">
+        @Html.TextBoxFor(model => model.pinxac, new { @class = "form-control" })
+        @Html.ValidationMessageFor(model => model.pinxac)
+    </div>
+    <div class="editor-label">
+        Bài viết đánh giá
+    </div>
+    <div class="editor-field">
+        @Html.TextBoxFor(model => model.chitiet, new { @class = "form-control" })
+        @Html.ValidationMessageFor(model => model.chitiet)
+    </div>
+    <div class="editor-label">
+        Hình chi tiết số 1
+    </div>
+    <div class="editor-field">
+        @Html.TextBoxFor(model => model.HINHANH1, new { @class = "form-control", type = "file" })
+    </div>
+
+    <div class="editor-label">
+        Hình chi tiết số 2
+    </div>
+    <div class="editor-field">
+        @Html.TextBoxFor(model => model.HINHANH2, new { @class = "form-control", type = "file" })
+    </div>
+
+    <div class="editor-label">
+        Hình chi tiết số 3
+    </div>
+    <div class="editor-field">
+        @Html.TextBoxFor(model => model.HINHANH3, new { @class = "form-control", type = "file" })
+    </div>
+
+    <div class="editor-label">
+        Hình chi tiết số 4
+    </div>
+    <div class="editor-field">
+        @Html.TextBoxFor(model => model.HINHANH4, new { @class = "form-control", type = "file" })
+    </div>
+
+    <div class="editor-label">
+        Hình chi tiết số 5
+    </div>
+    <div class="editor-field">
+        @Html.TextBoxFor(model => model.HINHANH5, new { @class = "form-control", type = "file" })
+    </div>
+
+    <div class="editor-label">
+        Hình chi tiết số 6
+    </div>
+    <div class="editor-field">
+        @Html.TextBoxFor(model => model.HINHANH6, new { @class = "form-control", type = "file" })
+    </div>
+
+    <p>
+        <input type="submit" value="Create" />
+    </p>
+</fieldset>
+    }
+    
+    <div>
+        @Html.ActionLink("Back to List", "Home")
+    </div>
+</body>
+</html>

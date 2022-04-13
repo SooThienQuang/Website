@@ -1,0 +1,100 @@
+﻿<!DOCTYPE html>
+<style>
+
+</style>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="container" style="background-color:black">
+
+
+        <div class="row">
+            @Html.Action("Navbar", "SerchProducts")
+        </div>
+        <div class="row" style="background-color: dimgrey;margin-top:0">
+            @Html.Action("LocSP", "SerchProducts")
+        </div>
+        @*///demo---------------------------------------------------------------------*@
+
+        <div class="row">
+            <div>
+                @RenderBody()
+            </div>
+        </div>
+
+
+        <div class="row">
+            <table>
+                <tr>
+                    <td>
+                        <p>
+                            Lịch sử mua hàng<br />
+                            Cộng tác bán hàng cùng TGDĐ
+                            <br />
+                            Tìm hiểu về mua trả góp
+                            <br />
+                            Chính sách bảo hành
+                            <br />
+                            Chính sách đổi trả
+                        </p>
+                    </td>
+                    <td></td>
+                    <td>
+                        <p>
+                            Giới thiệu công ty (MWG.vn)<br />
+
+                            Tuyển dụng
+                            <br />
+                            Gửi góp ý, khiếu nại
+                            <br />
+                            Tìm siêu thị (2.756 shop)
+                            <br />
+                            Xem bản mobile
+                        </p>
+                    </td>
+                    <td>
+                    </td>
+                    <td>
+                        <p>
+                            Tổng đài hỗ trợ (Miễn phí gọi)
+                            <br />
+                            Gọi mua: 1800.1060 (7:30 - 22:00)
+                            <br />
+                            Kỹ thuật: 1800.1763 (7:30 - 22:00)
+                            <br />
+                            Khiếu nại: 1800.1062 (8:00 - 21:30)
+                            <br />
+                            Bảo hành: 1800.1064 (8:00 - 21:00)
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
+<style>
+   p{
+       color:white;
+   }
+
+</style>

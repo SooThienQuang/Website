@@ -1,0 +1,457 @@
+﻿@using DoAn.Models
+@model PagedList.IPagedList<THIETBI>
+@using PagedList.Mvc
+@{
+    ViewBag.Title = "Home";
+    Layout = "~/Views/Shared/_LayoutPageMaster.cshtml";
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.js"></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,700&subset=latin-ext" rel="stylesheet">
+}
+@{
+    var info = Session["user"] as account;
+    MVC_demoEntities db = new MVC_demoEntities();
+    List<THIETBI> tb = db.THIETBIs.Where(n => n.LOAITB == 2).ToList();
+    List<THIETBI> maytinhbang = db.THIETBIs.Where(n => n.LOAITB == 3).ToList();
+    List<THIETBI> tainghe = db.THIETBIs.Where(n => n.LOAITB == 7).ToList();
+    List<Carosel> carosel = db.Carosels.ToList();
+}
+<script type="text/javascript">
+    function Submit() {
+        confirm("Thêm thành công ?")
+        //if (confirm("Thêm thành công ?")) {
+        //    return true;
+        //} else {
+        //    return false;
+        //}
+    }
+</script>
+@{ 
+    int crs = 0;
+}
+@*--------------------------------------------------------------------------------------------------*@
+<div class="container">
+    <div class="row" style="height:300px;">
+        <div class="col-sm-9">
+            <div id="carona" class="carousel w-100" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="~/Assets/images/crs1.png" class="d-block w-100" alt="Anh 1" />
+                    </div>
+                    @foreach (var item in carosel)
+                    {
+                        <div class="carousel-item">
+                            <img src="~/Assets/images/@item.hinhAnh" class="d-block w-100" alt="Anh 3" />
+                        </div>
+                    }
+                </div>
+                <a class="carousel-control-prev" href="#carona" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Priveous</span>
+                </a>
+
+                <a class="carousel-control-next" href="#carona" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+
+                </a>
+
+            </div>
+        </div>
+        <div class="col-sm-3">
+            <div class="row">
+                <div class="col">
+                    <img src="~/Assets/images/c2.png" style="width:100%" />
+                </div>
+                <div class="col">
+                    <img src="~/Assets/images/c3.png" style="width:100%" />
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <img src="~/Assets/images/c1.png" style="width:100%" />
+                </div>
+                <div class="col">
+                    <img src="~/Assets/images/c4.png" style="width:100%" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <img src="~/Assets/images/padding.png" style="width:100%" />
+    </div>
+    <div class="row">
+        <h3 style="color:white">CÁC SẢN PHẨM NỔI BẬT</h3>
+    </div>
+    <div class="row">
+        <div class="bd-example">
+            <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    @{
+                        int d3 = 0;
+                        int macuoi3 = 0;
+                    }
+                    <div class="carousel-item active">
+                        <div class="row">
+                            @foreach (var item in Model)
+                            {
+                                if (d3 != 4)
+                                {
+                                    <div class="col-3">
+                                        <div class="card h-100">
+                                            <a href="@Url.Action("Detail", "Home", new { ID = @item.MATB })" class="img-wrap">
+                                                <img src="~/Assets/images/@item.HINHANH" style="width:100%;height:220px" />
+
+                                            </a>
+
+                                            <div class="card-body">
+                                                <h4 class="card-title">@item.MATB</h4>
+                                                <div class="card-text">
+                                                    <h5>@item.TENTB </h5>
+                                                    <h3 style="color:red">@item.GIATHANH</h3>
+                                                </div>
+
+                                            </div>
+                                            <a href="@Url.Action("AddCart", "ShoppingCart", new {ID = @item.MATB })" onclick="return Submit()" class="img-wrap">
+                                                <img src="~/Assets/images/addtocart.jpg" style="width:50px;height:50px" />
+                                            </a>
+                                            <div class="card-footer">
+                                                <small class="text-muted"> Last update 3 mins ago</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    d3++;
+                                    macuoi3 = item.MATB;
+                                }
+
+                            }
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row">
+                            @foreach (var item in Model)
+                            {
+                                if (item.MATB > macuoi3)
+                                {
+                                    <div class="col-3">
+                                        <div class="card h-100">
+                                            <a href="@Url.Action("Detail", "Home", new { ID = @item.MATB })" class="img-wrap">
+                                                <img src="~/Assets/images/@item.HINHANH" style="width:100%;height:220px" />
+
+                                            </a>
+
+                                            <div class="card-body">
+                                                <h4 class="card-title">@item.MATB</h4>
+                                                <div class="card-text">
+                                                    <h5>@item.TENTB </h5>
+                                                    <h3 style="color:red">@item.GIATHANH</h3>
+                                                </div>
+
+                                            </div>
+                                            <a href="@Url.Action("AddCart", "ShoppingCart", new {ID = @item.MATB })" onclick="return Submit()" class="img-wrap">
+                                                <img src="~/Assets/images/addtocart.jpg" style="width:50px;height:50px" />
+                                            </a>
+                                            <div class="card-footer">
+                                                <small class="text-muted"> Last update 3 mins ago</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                }
+                            }
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+                    <img src="https://cdn0.iconfinder.com/data/icons/website-kit-2/512/icon_402-512.png" width="40" height="10" alt="Left" class="img-responsive">
+                </a>
+
+
+                <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+                    <img src="http://pixsector.com/cache/81183b13/avcc910c4ee5888b858fe.png" height="10" width="40" alt="Right" class="img-responsive">
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="row" style="height:50px">
+
+    </div>
+    <div class="row">
+        <div class="col-sm-3">
+            <h3 style="color:white">Laptop hot trong tuần</h3>
+        </div>
+
+        <div class="col">
+            <button type="button" class="btn btn-outline-link"><h3>Apple</h3></button>
+            <button type="button" class="btn btn-outline-primary"><h3>Dell</h3></button>
+            <button type="button" class="btn btn-outline-secondary"><h3>Acer</h3></button>
+            <button type="button" class="btn btn-outline-success"><h3>Asus</h3></button>
+            <button type="button" class="btn btn-outline-danger"><h3>MSI</h3></button>
+            <button type="button" class="btn btn-outline-warning"><h3>Microsoft</h3></button>
+            <button type="button" class="btn btn-outline-info"><h3>Avita</h3></button>
+            <button type="button" class="btn btn-outline-dark"><h3>Samsung</h3></button>
+        </div>
+    </div>
+    <div class="row" style="height:50px">
+
+    </div>
+    <div class="row">
+        <div class="bd-example">
+            <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+
+                    <div class="carousel-item active">
+                        <div class="row">
+                            @{
+                                int d = 0;
+                                int macuoi = 0;
+                            }
+                            @foreach (var item in tb)
+                            {
+                                if (d != 4)
+                                {
+                                    <div class="col-3">
+                                        <div class="card h-100">
+                                            <a href="@Url.Action("Detail", "Home", new { ID = @item.MATB })" class="img-wrap">
+                                                <img src="~/Assets/images/@item.HINHANH" style="width:100%;height:220px" />
+
+                                            </a>
+
+                                            <div class="card-body">
+                                                <h4 class="card-title">@item.MATB</h4>
+                                                <div class="card-text">
+                                                    <h5>@item.TENTB </h5>
+                                                    <h3 style="color:red">@item.GIATHANH</h3>
+                                                </div>
+
+                                            </div>
+                                            <a href="@Url.Action("AddCart", "ShoppingCart", new {ID = @item.MATB })" onclick="return Submit()" class="img-wrap">
+                                                <img src="~/Assets/images/addtocart.jpg" style="width:50px;height:50px" />
+                                            </a>
+                                            <div class="card-footer">
+                                                <small class="text-muted"> Last update 3 mins ago</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    d++;
+                                    macuoi = item.MATB;
+                                }
+
+                            }
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row">
+                            @foreach (var item in tb)
+                            {
+                                if (item.MATB > macuoi)
+                                {
+                                    <div class="col-3">
+                                        <div class="card h-100">
+                                            <a href="@Url.Action("Detail", "Home", new { ID = @item.MATB })" class="img-wrap">
+                                                <img src="~/Assets/images/@item.HINHANH" style="width:100%;height:220px" />
+
+                                            </a>
+
+                                            <div class="card-body">
+                                                <h4 class="card-title">@item.MATB</h4>
+                                                <div class="card-text">
+                                                    <h5>@item.TENTB </h5>
+                                                    <h3 style="color:red">@item.GIATHANH</h3>
+                                                </div>
+
+                                            </div>
+                                            <a href="@Url.Action("AddCart", "ShoppingCart", new {ID = @item.MATB })" onclick="return Submit()" class="img-wrap">
+                                                <img src="~/Assets/images/addtocart.jpg" style="width:50px;height:50px" />
+                                            </a>
+                                            <div class="card-footer">
+                                                <small class="text-muted"> Last update 3 mins ago</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                }
+                            }
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    @*//-------------------------------------------------------------------------------------------*@
+
+    <div class="row">
+        <h3 style="text-align:center;color:wheat">Máy tính bảng</h3>
+    </div>
+    <div class="row">
+        <div class="bd-example">
+            <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+
+                    <div class="carousel-item active">
+                        <div class="row">
+                            @{
+                                int d1 = 0;
+                                int macuoi1 = 0;
+                            }
+                            @foreach (var item in maytinhbang)
+                            {
+                                if (d1 != 4)
+                                {
+                                    <div class="col-3">
+                                        <div class="card h-100">
+                                            <a href="@Url.Action("Detail", "Home", new { ID = @item.MATB })" class="img-wrap">
+                                                <img src="~/Assets/images/@item.HINHANH" style="width:100%;height:220px" />
+
+                                            </a>
+
+                                            <div class="card-body">
+                                                <h4 class="card-title">@item.MATB</h4>
+                                                <div class="card-text">
+                                                    <h5>@item.TENTB </h5>
+                                                    <h3 style="color:red">@item.GIATHANH</h3>
+                                                </div>
+
+                                            </div>
+                                            <a href="@Url.Action("AddCart", "ShoppingCart", new {ID = @item.MATB })" onclick="return Submit()" class="img-wrap">
+                                                <img src="~/Assets/images/addtocart.jpg" style="width:50px;height:50px" />
+                                            </a>
+                                            <div class="card-footer">
+                                                <small class="text-muted"> Last update 3 mins ago</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    d1++;
+                                    macuoi1 = item.MATB;
+                                }
+
+                            }
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row">
+                            @foreach (var item in maytinhbang)
+                            {
+                                if (item.MATB > macuoi1)
+                                {
+                                    <div class="col-3">
+                                        <div class="card h-100">
+                                            <a href="@Url.Action("Detail", "Home", new { ID = @item.MATB })" class="img-wrap">
+                                                <img src="~/Assets/images/@item.HINHANH" style="width:100%;height:220px" />
+
+                                            </a>
+
+                                            <div class="card-body">
+                                                <h4 class="card-title">@item.MATB</h4>
+                                                <div class="card-text">
+                                                    <h5>@item.TENTB </h5>
+                                                    <h3 style="color:red">@item.GIATHANH</h3>
+                                                </div>
+
+                                            </div>
+                                            <a href="@Url.Action("AddCart", "ShoppingCart", new {ID = @item.MATB })" onclick="return Submit()" class="img-wrap">
+                                                <img src="~/Assets/images/addtocart.jpg" style="width:50px;height:50px" />
+                                            </a>
+                                            <div class="card-footer">
+                                                <small class="text-muted"> Last update 3 mins ago</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                }
+                            }
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <img src="~/Assets/images/padding.png" style="width:100%" />
+    </div>
+    <div class="card-group">
+        <div class="row">
+            @foreach (var item in tainghe)
+            {
+                <div class="col-sm-3">
+                    <div class="card h-100">
+                        <a href="@Url.Action("Detail", "Home", new {ID=@item.MATB })" class="img-wrap">
+                            <img src="~/Assets/images/@item.HINHANH" style="width:100%;height:220px" />
+
+                        </a>
+
+                        <div class="card-body">
+                            <h4 class="card-title">@item.MATB</h4>
+                            <div class="card-text">
+                                <h5>@item.TENTB </h5>
+                                <h3 style="color:red">@item.GIATHANH</h3>
+                            </div>
+
+                        </div>
+                        <a href="@Url.Action("AddCart", "ShoppingCart", new {ID = @item.MATB })" onclick="return Submit()" class="img-wrap">
+                            <img src="~/Assets/images/addtocart.jpg" style="width:50px;height:50px" />
+                        </a>
+                        <div class="card-footer">
+                            <small class="text-muted"> Last update 3 mins ago</small>
+                        </div>
+                    </div>
+                </div>
+            }
+            @*Trang   @Html.PagedListPager(Model, page => Url.Action("Index", new {page}))*@
+        </div>
+    </div>
+    <div class="row">
+        <h3>Chuyên gia thương hiệu</h3>
+    </div>
+    <div class="row">
+        <img src="~/Assets/images/pad.png" style="width:100%" />
+    </div>
+    <div class="row" style="height:20px;"></div>
+    <div class="pagination" style="margin-left: 400px">
+        Page @(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber)
+        of @Model.PageCount   @Html.PagedListPager(Model, page => Url.Action("Home", new { page }))
+    </div>
+</div>
+@*carosel sản phẩm*@
+
+
+<style>
+    .ul.pagination {
+        display: inline-block;
+        padding: 0;
+        margin: 0;
+    }
+
+    ul.pagination li {
+        display: inline;
+    }
+
+        ul.pagination li a {
+            color: black;
+            float: left;
+            padding: 8px 16px;
+            text-decoration: none;
+            transition: background-color .3s;
+        }
+
+            ul.pagination li a.active {
+                background-color: #4CAF50;
+                color: white;
+            }
+
+            ul.pagination li a:hover:not(.active) {
+                background-color: #ddd;
+            }
+</style>
+

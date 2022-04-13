@@ -1,0 +1,25 @@
+﻿@{
+    ViewBag.Title = "LocTheoGiaSanPham";
+    Layout = "~/Views/Shared/_LayoutPageMaster.cshtml";
+}
+@model IEnumerable<DoAn.Models.HangSanXuat>
+<div class="row" style="background-color:black">
+    <nav class="navbar navbar-expand-lg" style="width:100%">
+        <div class="container-fluid">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        @foreach (var item in Model)
+                        {
+                            <a href="@Url.Action("LocTheoHangSanXuat","SerchProducts", new { @MaHSX = item.MaHSX })" style="text-transform:uppercase; text-decoration:none;">
+                                @item.TenHSX
+                            </a>
+                        }
+
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+
+</div>

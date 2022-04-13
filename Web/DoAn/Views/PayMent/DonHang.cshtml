@@ -1,0 +1,77 @@
+﻿
+@using DoAn.Models
+@model List<HOADON>
+@{
+    ViewBag.Title = "DonHang";
+    Layout = "~/Views/Shared/_LayoutPageMaster.cshtml";
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+}
+@{
+    var info = Session["user"] as DoAn.Models.account;
+    MVC_demoEntities cn = new MVC_demoEntities();
+}
+<div class="container">
+    @{
+        if (info == null)
+            {
+        <div class="row">
+           
+
+            <h1>Vui lòng đăng nhập để xem đơn hàng</h1>
+
+            <br />
+            <br />
+            @Html.ActionLink("Đăng nhập ngay","Login","Account")
+        </div>
+        }
+        else
+        {
+
+            foreach (var item in Model)
+            {
+                foreach (var item2 in cn.THIETBIs.Where(n => n.MATB == @item.MATB).ToList())
+                {
+    <table border="1">
+        <tr>
+            <td>Thông tin chi tiết đơn hàng</td>
+        </tr>
+        <tr>
+            <td>Hình ảnh</td>
+            <td>Tên thiết bị</td>
+            <td>Giá thành</td>
+            <td>Số lượng</td>
+            <td>Địa chỉ</td>
+            <td>Số điện thoại</td>
+        </tr>
+        <tr>
+            <td>
+                <img src="~/Assets/images/@item2.HINHANH" height="200px" width="200px" />
+            </td>
+            <td>@item2.TENTB</td>
+            <td>
+                @item2.GIATHANH
+            </td>
+            <td>
+                @item.soLuong
+            </td>
+            <td>
+                @item.diachi,@item.quanHuyen,@item.tinhTP
+            </td>
+            <td>
+                @item.sodienthoai
+            </td>
+        </tr>
+    </table>
+    }
+
+    }
+    }
+    }
+
+    <div class="row">
+        <img src="~/Assets/images/pad.png" style="width:100%" />
+    </div>
+</div>

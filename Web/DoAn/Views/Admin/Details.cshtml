@@ -1,0 +1,120 @@
+﻿@model IEnumerable<DoAn.Models.CHITIETTB>
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_LayoutPageC.cshtml";
+}
+s
+
+<table>
+    <tr>
+        <th>
+            Mã thiết bị
+        </th>
+        <th>
+            Tên thiết bị
+        </th>
+        <th>
+           Giá thành
+        </th>
+        <th>
+           Màn hình
+        </th>
+        <th>
+            Hệ điều hành
+        </th>
+        <th>
+           Camera Sau
+        </th>
+        <th>
+            Cam trước
+        </th>
+        <th>
+           Chip
+        </th>
+        <th>
+            Ram
+        </th>
+        <th>
+            Rom
+        </th>
+        <th>
+           Sim
+        </th>
+        <th>
+           Pin xạc
+        </th>
+       
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.MATB)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TENTB)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.GIATHANH)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.MANHINH)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.HDH)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Camerasau)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.cameratruoc)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.chip)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ram)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.bonho)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.sim)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.pinxac)
+        </td>
+       
+     
+       
+    </tr>
+    <tr>
+        <td>
+            <img src="~/Assets/images/@item.HINHANH1" width="100" height="100" />
+        </td>
+        <td>
+            <img src="~/Assets/images/@item.HINHANH2" width="100" height="100" />
+        </td>
+        <td>
+            <img src="~/Assets/images/@item.HINHANH3" width="100" height="100" />
+        </td>
+        <td>
+            <img src="~/Assets/images/@item.HINHANH4" width="100" height="100" />
+        </td>
+        <td>
+            <img src="~/Assets/images/@item.HINHANH5" width="100" height="100" />
+        </td>
+        <td>
+            <img src="~/Assets/images/@item.HINHANH6" width="100" height="100" />
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
+            @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+            @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+        </td>
+    </tr>
+}
+
+</table>

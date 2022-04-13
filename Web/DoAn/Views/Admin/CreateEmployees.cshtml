@@ -1,0 +1,123 @@
+﻿@model DoAn.Models.NhanVien
+
+@{
+    ViewBag.Title = "CreateEmployees";
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+}
+
+<h2>Thêm mới nhân viên</h2>
+<div class="row" style="background-color:cadetblue">
+
+    <div class="col-sm-2">
+
+    </div>
+    <div class="col-sm-8">
+        @using (Html.BeginForm())
+        {
+            @Html.AntiForgeryToken()
+            @Html.ValidationSummary(true)
+
+            <fieldset>
+
+                <div class="editor-label">
+                    Mã nhân viên
+                </div>
+                <div class="editor-field">
+                    @Html.TextBoxFor(model => model.maNV, new { @class = "form-control" })
+                    @Html.ValidationMessageFor(model => model.maNV)
+                </div>
+
+                <div class="editor-label">
+                    Tên nhân viên
+                </div>
+                <div class="editor-field">
+                    @Html.TextBoxFor(model => model.tenNV, new { @class = "form-control" })
+                    @Html.ValidationMessageFor(model => model.tenNV)
+                </div>
+
+                <div class="editor-label">
+                    Ngày sinh
+                </div>
+                <div class="editor-field">
+                    @Html.TextBoxFor(model => model.ngaysinh, new { @class = "form-control", type = "date" })
+                    @Html.ValidationMessageFor(model => model.ngaysinh)
+                </div>
+
+                <div class="editor-label">
+                    Địa chỉ
+                </div>
+                <div class="editor-field">
+                    @Html.TextBoxFor(model => model.diaChi, new { @class = "form-control" })
+                    @Html.ValidationMessageFor(model => model.diaChi)
+                </div>
+
+                <div class="editor-label">
+                    Ngày vào làm
+                </div>
+                <div class="editor-field">
+                    @Html.TextBoxFor(model => model.ngayVaoLam, new { @class = "form-control", type = "date" })
+                    @Html.ValidationMessageFor(model => model.ngayVaoLam)
+                </div>
+
+                <div class="editor-label">
+                    Hình ảnh
+                </div>
+                <div class="editor-field">
+                    @Html.TextBoxFor(model => model.hinhanh, new { @class = "form-control", type = "file" })
+                    @Html.ValidationMessageFor(model => model.hinhanh)
+                </div>
+
+                <div class="editor-label">
+                    Lương
+                </div>
+                <div class="editor-field">
+                    @Html.TextBoxFor(model => model.luong, new { @class = "form-control" })
+                    @Html.ValidationMessageFor(model => model.luong)
+                </div>
+
+                <div class="editor-label">
+                    Mã công việc
+                </div>
+                <div class="editor-field">
+                    @Html.DropDownListFor(model => model.maCV, null, "Chọn chức vụ", new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.maCV)
+                </div>
+
+                <div class="editor-label">
+                    Email
+                </div>
+                <div class="editor-field">
+                    @Html.TextBoxFor(model => model.email, new { @class = "form-control" })
+                    @Html.ValidationMessageFor(model => model.email)
+                </div>
+
+                <div class="editor-label">
+                    Số điện thoại
+                </div>
+                <div class="editor-field">
+                    @Html.TextBoxFor(model => model.soDT, new { @class = "form-control" })
+                    @Html.ValidationMessageFor(model => model.soDT)
+                </div>
+
+                <p style="text-align:center">
+                    <button type="submit" class="btn btn-outline-dark">Thêm ngay</button>
+                </p>
+            </fieldset>
+        }
+
+        <div>
+            <h3> @Html.ActionLink("Back to List", "Home")</h3>
+        </div>
+
+        @section Scripts {
+            @Scripts.Render("~/bundles/jqueryval")
+        }
+
+    </div>
+    <div class="col-sm-2">
+
+    </div>
+</div>

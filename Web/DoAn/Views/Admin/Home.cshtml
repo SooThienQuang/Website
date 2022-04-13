@@ -1,0 +1,94 @@
+﻿@using DoAn.Models
+@model PagedList.IPagedList<THIETBI>
+@using PagedList.Mvc
+
+    @{
+        ViewBag.Title = "Home";
+        Layout = "~/Views/Shared/_LayoutPageC.cshtml";
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    }
+<div class="row">
+    @using (Html.BeginForm())
+    {
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto mb-2 mb-lg-0">
+                        <li class="nav-item" style="width:500px">
+                            <input class="form-control" type="search" placeholder="Search" aria-label="Search" name="txt_serch" />
+                        </li>
+                        <li class="nav-item">
+                            <button class="btn btn-outline-success" type="submit">Search</button>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+
+
+        </nav>
+    }
+</div>
+    <div class="row">
+        <img src="~/Assets/images/pad.png" width="100%" height="100" />
+    </div>
+    <table class="table" style="table-layout">
+        <tr>
+            <th>
+                Mã thiết bị
+            </th>
+            <th>
+                Tên thiết bị
+            </th>
+            <th>
+                Giá thành
+            </th>
+            <th>
+                Hình ảnh
+            </th>
+            <th>
+                Số lượng
+            </th>
+            <th>
+                Loại thiết bị
+            </th>
+            <th></th>
+        </tr>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.MATB)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.TENTB)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.GIATHANH)
+                </td>
+                <td>
+                    <img src="~/Assets/images/@item.HINHANH" height="100" width="100" />
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.SOLUONG)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.LOAITB)
+                </td>
+                <td>
+                    @Html.ActionLink("Delete", "xoaTB", new { id = item.MATB })
+                    @Html.ActionLink("Update", "Update", new { id = item.MATB })
+                    @Html.ActionLink("Details", "Details", new { id = item.MATB })
+                </td>
+            </tr>
+        }
+
+    </table>
+    <div class="pagination" style="margin-left: 400px">
+        Page @(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber)
+        of @Model.PageCount   @Html.PagedListPager(Model, page => Url.Action("Home", new { page }))
+    </div>

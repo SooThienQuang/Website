@@ -1,0 +1,229 @@
+﻿@using DoAn.Models
+@model PagedList.IPagedList<THIETBI>
+@using PagedList.Mvc
+@{
+    ViewBag.Title = "Home";
+    Layout = "~/Views/Shared/_LayoutPageAdmin.cshtml";
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+}
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <table>
+                <tr>
+                    <td>
+                        Thông tin thiết bị
+                    </td>
+                </tr>
+                <tr>
+                    <td>Mã thiết bị</td>
+                    <td><input maxlength="100%" type="text" required="required" class="form-control" placeholder="Example :1" /></td>
+                </tr>
+                <tr>
+                    <td>Tên thiết bị</td>
+                    <td>
+                        <input maxlength="100%" type="text" required="required" class="form-control" placeholder="Nhập tên  thiết bị" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Giá thành
+                    </td>
+                    <td><input maxlength="100%" type="text" required="required" class="form-control" placeholder="2000000" /></td>
+                </tr>
+                <tr>
+                    <td>Hình ảnh</td>
+                    <td><input id="hinh" name="hinh" type="file" class="form-control" /><br /></td>
+                </tr>
+                <tr>
+                    <td>
+                        Số lượng
+                    </td>
+                    <td><input maxlength="100%" type="text" required="required" class="form-control" placeholder="200" /></td>
+                </tr>
+                <tr>
+                    <td>
+                        Loại thiết bị
+                    </td>
+                    <td><input maxlength="100%" type="text" required="required" class="form-control" placeholder="1" /></td>
+                </tr>
+
+            </table>
+            <button class="btn btn-primary nextBtn btn-lg pull-right" type="submit" onclick="@Html.Action("XLTB","Admin")">Nhập</button>
+        </div>
+
+    </div>
+    <div class="row">
+        <img src="~/Assets/images/bangroll.png" width="100%" />
+    </div>
+    <div class="row">
+        <div class="col">
+            <table>
+                <tr>
+                    <td>
+                        Chi tiết thiết bị
+                    </td>
+                </tr>
+                <tr>
+                    <td>Mã thiết bị</td>
+                    <td><input maxlength="100%" type="text" required="required" class="form-control" placeholder="Example :1" /></td>
+                </tr>
+                <tr>
+                    <td>Tên thiết bị</td>
+                    <td>
+                        <input maxlength="100%" type="text" required="required" class="form-control" placeholder="Nhập tên  thiết bị" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Giá thành
+                    </td>
+                    <td><input maxlength="100%" type="text" required="required" class="form-control" placeholder="2000000" /></td>
+                </tr>
+                <tr>
+                    <td>Màn hình</td>
+                    <td><input id="hinh" name="hinh" type="text" class="form-control" /><br /></td>
+                </tr>
+                <tr>
+                    <td>
+                        Hệ điều hành
+                    </td>
+                    <td><input maxlength="100%" type="text" required="required" class="form-control" placeholder="200" /></td>
+                </tr>
+                <tr>
+                    <td>
+                        Camera sau
+                    </td>
+                    <td><input maxlength="100%" type="text" required="required" class="form-control" placeholder="1" /></td>
+                </tr>
+                <tr>
+                    <td>
+                        Camera trước
+                    </td>
+                    <td><input maxlength="100%" type="text" required="required" class="form-control" placeholder="1" /></td>
+                </tr>
+                <tr>
+                    <td>
+                        Bộ xử lý
+                    </td>
+                    <td><input maxlength="100%" type="text" required="required" class="form-control" placeholder="1" /></td>
+                </tr>
+                <tr>
+                    <td>
+                        Ram
+                    </td>
+                    <td><input maxlength="100%" type="text" required="required" class="form-control" placeholder="1" /></td>
+                </tr>
+                <tr>
+                    <td>
+                        Bộ nhớ
+                    </td>
+                    <td><input maxlength="100%" type="text" required="required" class="form-control" placeholder="1" /></td>
+                </tr>
+                <tr>
+                    <td>
+                        Sim
+                    </td>
+                    <td><input maxlength="100%" type="text" required="required" class="form-control" placeholder="1" /></td>
+                </tr>
+                <tr>
+                    <td>
+                        Pin
+                    </td>
+                    <td><input maxlength="100%" type="text" required="required" class="form-control" placeholder="1" /></td>
+                </tr>
+            </table>
+
+
+        </div>
+        <div class="col">
+            <table>
+                <tr>
+                    <td>
+                        Hình ảnh 1
+                    </td>
+                    <td><input maxlength="100%" type="file" required="required" class="form-control" placeholder="1" /></td>
+                </tr>
+                <tr>
+                    <td>
+                        Hình ảnh 2
+                    </td>
+                    <td><input maxlength="100%" type="file" required="required" class="form-control" placeholder="1" /></td>
+                </tr>
+                <tr>
+                    <td>
+                        Hình ảnh 3
+                    </td>
+                    <td><input maxlength="100%" type="file" required="required" class="form-control" placeholder="1" /></td>
+                </tr>
+                <tr>
+                    <td>
+                        Hình ảnh 4
+                    </td>
+                    <td><input maxlength="100%" type="file" required="required" class="form-control" placeholder="1" /></td>
+                </tr>
+                <tr>
+                    <td>
+                        Hình ảnh 5
+                    </td>
+                    <td><input maxlength="100%" type="file" required="required" class="form-control" placeholder="1" /></td>
+                </tr>
+                <tr>
+                    <td>
+                        Hình ảnh 6
+                    </td>
+                    <td><input maxlength="100%" type="file" required="required" class="form-control" placeholder="1" /></td>
+                </tr>
+            </table>
+            <button class="btn btn-primary nextBtn btn-lg pull-right" type="submit" onclick="@Html.Action("XLChiTietTB","Admin")">Nhập</button>
+        </div>
+    </div>
+
+    <div class="row">
+        <img src="~/Assets/images/bangroll.png" width="100%" />
+    </div>
+
+    <div class="card-group">
+        <h2>Các sản phẩm nổi bậc</h2>
+        <div class="row">
+            @foreach (var item in Model)
+            {
+                <div class="col-sm-3">
+                    <div class="card h-100">
+                        <a href="@Url.Action("Detail", "Home", new {ID=@item.MATB })" class="img-wrap">
+                            <img src="~/Assets/images/@item.HINHANH" style="width:100%;height:220px" />
+
+                        </a>
+
+                        <div class="card-body">
+                            <h4 class="card-title">@item.MATB</h4>
+                            <div class="card-text">
+                                <h5>@item.TENTB </h5>
+                                <h3 style="color:red">@item.GIATHANH</h3>
+                            </div>
+
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-muted"> Last update 3 mins ago</small>
+                        </div>
+                    </div>
+                </div>
+            }
+            @*Trang   @Html.PagedListPager(Model, page => Url.Action("Index", new {page}))*@
+        </div>
+    </div>
+    <div class="row">
+        <h3>Chuyên gia thương hiệu</h3>
+    </div>
+    <div class="row">
+        <img src="~/Assets/images/pad.png" style="width:100%" />
+    </div>
+    <div class="row" style="height:20px;"></div>
+    <div class="pagination" style="margin-left: 400px">
+        Page @(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber)
+        of @Model.PageCount   @Html.PagedListPager(Model, page => Url.Action("Home", new { page }))
+    </div>
+</div>

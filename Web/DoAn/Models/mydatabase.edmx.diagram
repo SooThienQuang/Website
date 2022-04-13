@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="fadb30b2c3db4e1b8056506ea3997ad0" Name="Diagram1">
+        <EntityTypeShape EntityType="MVC_demoModel.account" Width="1.5" PointX="10" PointY="5" />
+        <EntityTypeShape EntityType="MVC_demoModel.Carosel" Width="1.5" PointX="0.75" PointY="0.75" />
+        <EntityTypeShape EntityType="MVC_demoModel.CHITIETTB" Width="1.5" PointX="5.25" PointY="1.25" />
+        <EntityTypeShape EntityType="MVC_demoModel.chucVu" Width="1.5" PointX="7.75" PointY="3.125" />
+        <EntityTypeShape EntityType="MVC_demoModel.HangSanXuat" Width="1.5" PointX="7.75" PointY="7.75" />
+        <EntityTypeShape EntityType="MVC_demoModel.HOADON" Width="1.5" PointX="5.25" PointY="6.875" />
+        <EntityTypeShape EntityType="MVC_demoModel.loaiTB" Width="1.5" PointX="0.75" PointY="5" />
+        <EntityTypeShape EntityType="MVC_demoModel.NhanVien" Width="1.5" PointX="10" PointY="1.125" />
+        <EntityTypeShape EntityType="MVC_demoModel.THIETBI" Width="1.5" PointX="3" PointY="4.25" />
+        <AssociationConnector Association="MVC_demoModel.FK__account__maCV__31EC6D26" />
+        <AssociationConnector Association="MVC_demoModel.fk_macttb" />
+        <AssociationConnector Association="MVC_demoModel.FK__NhanVien__maCV__34C8D9D1" />
+        <AssociationConnector Association="MVC_demoModel.fk_matb" />
+        <AssociationConnector Association="MVC_demoModel.fk_loaitb" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

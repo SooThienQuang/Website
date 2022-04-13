@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="fadb30b2c3db4e1b8056506ea3997ad0" Name="Diagram1">
+        <EntityTypeShape EntityType="MVC_demoModel.account" Width="1.5" PointX="12.25" PointY="1.5" />
+        <EntityTypeShape EntityType="MVC_demoModel.CHITIETTB" Width="1.5" PointX="5.25" PointY="1.25" />
+        <EntityTypeShape EntityType="MVC_demoModel.chucVu" Width="1.5" PointX="7.75" PointY="1.625" />
+        <EntityTypeShape EntityType="MVC_demoModel.HoaDon" Width="1.5" PointX="5.25" PointY="6.625" />
+        <EntityTypeShape EntityType="MVC_demoModel.loaiAccount" Width="1.5" PointX="10" PointY="1" />
+        <EntityTypeShape EntityType="MVC_demoModel.loaiTB" Width="1.5" PointX="0.75" PointY="4.875" />
+        <EntityTypeShape EntityType="MVC_demoModel.sysdiagram" Width="1.5" PointX="0.75" PointY="0.75" />
+        <EntityTypeShape EntityType="MVC_demoModel.THIETBI" Width="1.5" PointX="3" PointY="4.25" />
+        <AssociationConnector Association="MVC_demoModel.FK__account__loaiAcc__69FBBC1F" />
+        <AssociationConnector Association="MVC_demoModel.fk_macttb" />
+        <AssociationConnector Association="MVC_demoModel.FK__loaiAccou__maChu__662B2B3B" />
+        <AssociationConnector Association="MVC_demoModel.fk_matb" />
+        <AssociationConnector Association="MVC_demoModel.fk_loaitb" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

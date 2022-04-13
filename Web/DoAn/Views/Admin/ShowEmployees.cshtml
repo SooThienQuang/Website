@@ -1,0 +1,88 @@
+﻿@model IEnumerable<DoAn.Models.NhanVien>
+
+@{
+    ViewBag.Title = "ShowEmployees";
+    Layout = "~/Views/Shared/_LayoutPageC.cshtml";
+}
+
+<h2>ShowEmployees</h2>
+
+<p>
+    @Html.ActionLink("Create New", "CreateEmployees")
+</p>
+<table style="table-layout">
+    <tr>
+        <th>
+           Mã nhân viên
+        </th>
+        <th>
+           Tên nhân viên
+        </th>
+        <th>
+            Ngày sinh
+        </th>
+        <th>
+            Địa chỉ
+        </th>
+        <th>
+            Ngày vào làm
+        </th>
+        <th>
+           Hình ảnh
+        </th>
+        <th>
+           Lương
+        </th>
+        <th>
+           Mã công việc
+        </th>
+        <th>
+           Email
+        </th>
+        <th>
+            Số điện thoại
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.maNV)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.tenNV)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ngaysinh)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.diaChi)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ngayVaoLam)
+        </td>
+        <td>
+           <img src="~/Assets/images/@item.hinhanh" width="200"height="200"/>
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.luong)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.maCV)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.email)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.soDT)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "updateEmployees", new {id=item.maNV }) |
+            @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+            @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+        </td>
+    </tr>
+}
+
+</table>

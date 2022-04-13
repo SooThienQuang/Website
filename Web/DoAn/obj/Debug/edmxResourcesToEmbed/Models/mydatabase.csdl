@@ -1,0 +1,208 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="MVC_demoModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="MVC_demoEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="accounts" EntityType="MVC_demoModel.account" />
+    <EntitySet Name="Carosels" EntityType="MVC_demoModel.Carosel" />
+    <EntitySet Name="CHITIETTBs" EntityType="MVC_demoModel.CHITIETTB" />
+    <EntitySet Name="chucVus" EntityType="MVC_demoModel.chucVu" />
+    <EntitySet Name="HangSanXuats" EntityType="MVC_demoModel.HangSanXuat" />
+    <EntitySet Name="HOADONs" EntityType="MVC_demoModel.HOADON" />
+    <EntitySet Name="loaiTBs" EntityType="MVC_demoModel.loaiTB" />
+    <EntitySet Name="NhanViens" EntityType="MVC_demoModel.NhanVien" />
+    <EntitySet Name="THIETBIs" EntityType="MVC_demoModel.THIETBI" />
+    <AssociationSet Name="FK__account__maCV__31EC6D26" Association="MVC_demoModel.FK__account__maCV__31EC6D26">
+      <End Role="chucVu" EntitySet="chucVus" />
+      <End Role="account" EntitySet="accounts" />
+    </AssociationSet>
+    <AssociationSet Name="fk_macttb" Association="MVC_demoModel.fk_macttb">
+      <End Role="THIETBI" EntitySet="THIETBIs" />
+      <End Role="CHITIETTB" EntitySet="CHITIETTBs" />
+    </AssociationSet>
+    <AssociationSet Name="FK__NhanVien__maCV__34C8D9D1" Association="MVC_demoModel.FK__NhanVien__maCV__34C8D9D1">
+      <End Role="chucVu" EntitySet="chucVus" />
+      <End Role="NhanVien" EntitySet="NhanViens" />
+    </AssociationSet>
+    <AssociationSet Name="fk_matb" Association="MVC_demoModel.fk_matb">
+      <End Role="THIETBI" EntitySet="THIETBIs" />
+      <End Role="HOADON" EntitySet="HOADONs" />
+    </AssociationSet>
+    <AssociationSet Name="fk_loaitb" Association="MVC_demoModel.fk_loaitb">
+      <End Role="loaiTB" EntitySet="loaiTBs" />
+      <End Role="THIETBI" EntitySet="THIETBIs" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="account">
+    <Key>
+      <PropertyRef Name="email" />
+    </Key>
+    <Property Name="HovaTen" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="email" Type="String" Nullable="false" MaxLength="50" FixedLength="true" Unicode="false" />
+    <Property Name="pass" Type="String" MaxLength="50" FixedLength="true" Unicode="false" />
+    <Property Name="maCV" Type="Int32" />
+    <NavigationProperty Name="chucVu" Relationship="MVC_demoModel.FK__account__maCV__31EC6D26" FromRole="account" ToRole="chucVu" />
+  </EntityType>
+  <EntityType Name="Carosel">
+    <Key>
+      <PropertyRef Name="hinhAnh" />
+    </Key>
+    <Property Name="MaChuDe" Type="Int32" />
+    <Property Name="hinhAnh" Type="String" Nullable="false" MaxLength="50" FixedLength="true" Unicode="false" />
+  </EntityType>
+  <EntityType Name="CHITIETTB">
+    <Key>
+      <PropertyRef Name="MATB" />
+    </Key>
+    <Property Name="MATB" Type="Int32" Nullable="false" />
+    <Property Name="TENTB" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="GIATHANH" Type="Double" />
+    <Property Name="MANHINH" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="HDH" Type="String" MaxLength="30" FixedLength="true" Unicode="false" />
+    <Property Name="Camerasau" Type="String" MaxLength="40" FixedLength="true" Unicode="false" />
+    <Property Name="cameratruoc" Type="String" MaxLength="20" FixedLength="true" Unicode="false" />
+    <Property Name="chip" Type="String" MaxLength="40" FixedLength="true" Unicode="false" />
+    <Property Name="ram" Type="String" MaxLength="30" FixedLength="true" Unicode="false" />
+    <Property Name="bonho" Type="String" MaxLength="30" FixedLength="true" Unicode="false" />
+    <Property Name="sim" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="pinxac" Type="String" MaxLength="30" FixedLength="true" Unicode="false" />
+    <Property Name="HINHANH1" Type="String" MaxLength="30" FixedLength="true" Unicode="false" />
+    <Property Name="HINHANH2" Type="String" MaxLength="30" FixedLength="true" Unicode="false" />
+    <Property Name="HINHANH3" Type="String" MaxLength="30" FixedLength="true" Unicode="false" />
+    <Property Name="HINHANH4" Type="String" MaxLength="30" FixedLength="true" Unicode="false" />
+    <Property Name="HINHANH5" Type="String" MaxLength="30" FixedLength="true" Unicode="false" />
+    <Property Name="HINHANH6" Type="String" MaxLength="30" FixedLength="true" Unicode="false" />
+    <Property Name="chitiet" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="THIETBI" Relationship="MVC_demoModel.fk_macttb" FromRole="CHITIETTB" ToRole="THIETBI" />
+  </EntityType>
+  <EntityType Name="chucVu">
+    <Key>
+      <PropertyRef Name="maCV" />
+    </Key>
+    <Property Name="maCV" Type="Int32" Nullable="false" />
+    <Property Name="tenCV" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="accounts" Relationship="MVC_demoModel.FK__account__maCV__31EC6D26" FromRole="chucVu" ToRole="account" />
+    <NavigationProperty Name="NhanViens" Relationship="MVC_demoModel.FK__NhanVien__maCV__34C8D9D1" FromRole="chucVu" ToRole="NhanVien" />
+  </EntityType>
+  <EntityType Name="HangSanXuat">
+    <Key>
+      <PropertyRef Name="MAHSX" />
+    </Key>
+    <Property Name="MAHSX" Type="Int32" Nullable="false" />
+    <Property Name="TENHSX" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="HOADON">
+    <Key>
+      <PropertyRef Name="maHD" />
+    </Key>
+    <Property Name="maHD" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="mail" Type="String" MaxLength="50" FixedLength="true" Unicode="false" />
+    <Property Name="sodienthoai" Type="String" MaxLength="60" FixedLength="true" Unicode="false" />
+    <Property Name="hoten" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="diachi" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="quanHuyen" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="tinhTP" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="hinhThucTT" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="MATB" Type="Int32" />
+    <Property Name="soLuong" Type="Int32" />
+    <Property Name="thoiGian" Type="DateTime" Precision="0" />
+    <NavigationProperty Name="THIETBI" Relationship="MVC_demoModel.fk_matb" FromRole="HOADON" ToRole="THIETBI" />
+  </EntityType>
+  <EntityType Name="loaiTB">
+    <Key>
+      <PropertyRef Name="loaiTB1" />
+    </Key>
+    <Property Name="loaiTB1" Type="Int32" Nullable="false" />
+    <Property Name="tenLoai" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="THIETBIs" Relationship="MVC_demoModel.fk_loaitb" FromRole="loaiTB" ToRole="THIETBI" />
+  </EntityType>
+  <EntityType Name="NhanVien">
+    <Key>
+      <PropertyRef Name="maNV" />
+    </Key>
+    <Property Name="maNV" Type="Int32" Nullable="false" />
+    <Property Name="tenNV" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ngaysinh" Type="DateTime" Precision="0" />
+    <Property Name="diaChi" Type="String" MaxLength="70" FixedLength="false" Unicode="true" />
+    <Property Name="ngayVaoLam" Type="DateTime" Precision="0" />
+    <Property Name="hinhanh" Type="String" MaxLength="30" FixedLength="true" Unicode="false" />
+    <Property Name="luong" Type="Int32" />
+    <Property Name="maCV" Type="Int32" />
+    <Property Name="email" Type="String" MaxLength="40" FixedLength="true" Unicode="true" />
+    <Property Name="soDT" Type="String" MaxLength="10" FixedLength="true" Unicode="false" />
+    <NavigationProperty Name="chucVu" Relationship="MVC_demoModel.FK__NhanVien__maCV__34C8D9D1" FromRole="NhanVien" ToRole="chucVu" />
+  </EntityType>
+  <EntityType Name="THIETBI">
+    <Key>
+      <PropertyRef Name="MATB" />
+    </Key>
+    <Property Name="MATB" Type="Int32" Nullable="false" />
+    <Property Name="TENTB" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="GIATHANH" Type="Double" />
+    <Property Name="HINHANH" Type="String" MaxLength="50" FixedLength="true" Unicode="false" />
+    <Property Name="SOLUONG" Type="Int32" />
+    <Property Name="LOAITB" Type="Int32" />
+    <Property Name="MAHSX" Type="Int32" />
+    <NavigationProperty Name="CHITIETTB" Relationship="MVC_demoModel.fk_macttb" FromRole="THIETBI" ToRole="CHITIETTB" />
+    <NavigationProperty Name="HOADONs" Relationship="MVC_demoModel.fk_matb" FromRole="THIETBI" ToRole="HOADON" />
+    <NavigationProperty Name="loaiTB1" Relationship="MVC_demoModel.fk_loaitb" FromRole="THIETBI" ToRole="loaiTB" />
+  </EntityType>
+  <Association Name="FK__account__maCV__31EC6D26">
+    <End Type="MVC_demoModel.chucVu" Role="chucVu" Multiplicity="0..1" />
+    <End Type="MVC_demoModel.account" Role="account" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="chucVu">
+        <PropertyRef Name="maCV" />
+      </Principal>
+      <Dependent Role="account">
+        <PropertyRef Name="maCV" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_macttb">
+    <End Type="MVC_demoModel.THIETBI" Role="THIETBI" Multiplicity="1" />
+    <End Type="MVC_demoModel.CHITIETTB" Role="CHITIETTB" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="THIETBI">
+        <PropertyRef Name="MATB" />
+      </Principal>
+      <Dependent Role="CHITIETTB">
+        <PropertyRef Name="MATB" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__NhanVien__maCV__34C8D9D1">
+    <End Type="MVC_demoModel.chucVu" Role="chucVu" Multiplicity="0..1" />
+    <End Type="MVC_demoModel.NhanVien" Role="NhanVien" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="chucVu">
+        <PropertyRef Name="maCV" />
+      </Principal>
+      <Dependent Role="NhanVien">
+        <PropertyRef Name="maCV" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_matb">
+    <End Type="MVC_demoModel.THIETBI" Role="THIETBI" Multiplicity="0..1" />
+    <End Type="MVC_demoModel.HOADON" Role="HOADON" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="THIETBI">
+        <PropertyRef Name="MATB" />
+      </Principal>
+      <Dependent Role="HOADON">
+        <PropertyRef Name="MATB" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_loaitb">
+    <End Type="MVC_demoModel.loaiTB" Role="loaiTB" Multiplicity="0..1" />
+    <End Type="MVC_demoModel.THIETBI" Role="THIETBI" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="loaiTB">
+        <PropertyRef Name="loaiTB1" />
+      </Principal>
+      <Dependent Role="THIETBI">
+        <PropertyRef Name="LOAITB" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

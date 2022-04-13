@@ -1,0 +1,65 @@
+﻿@model DoAn.Models.THIETBI
+
+@{
+    ViewBag.Title = "Update";
+    Layout = "~/Views/Shared/_LayoutPageC.cshtml";
+}
+
+<h2>Update</h2>
+
+<fieldset>
+    <legend>THIETBI</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.MATB)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.MATB)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.TENTB)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.TENTB)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.GIATHANH)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.GIATHANH)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.HINHANH)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.HINHANH)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.SOLUONG)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.SOLUONG)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.LOAITB)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.LOAITB)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.HANGSX)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.HANGSX)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { /* id=Model.PrimaryKey */ }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

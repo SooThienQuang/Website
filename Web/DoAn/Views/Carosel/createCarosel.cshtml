@@ -1,0 +1,48 @@
+﻿@model DoAn.Models.Carosel
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>createCarosel</title>
+</head>
+<body>
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+        @Html.ValidationSummary(true)
+    
+        <fieldset>
+            <legend>Carosel</legend>
+    
+            <div class="editor-label">
+                @Html.LabelFor(model => model.MaChuDe)
+            </div>
+            <div class="editor-field">
+                @Html.EditorFor(model => model.MaChuDe)
+                @Html.ValidationMessageFor(model => model.MaChuDe)
+            </div>
+    
+            <div class="editor-label">
+                @Html.LabelFor(model => model.hinhAnh)
+            </div>
+            <div class="editor-field">
+                @Html.TextBoxFor(model => model.hinhAnh, new { @class = "form-control",type="file" })
+                @Html.ValidationMessageFor(model => model.hinhAnh)
+            </div>
+    
+            <p>
+                <input type="submit" value="Create" />
+            </p>
+        </fieldset>
+    }
+    
+    <div>
+        @Html.ActionLink("Back to List", "Index")
+    </div>
+</body>
+</html>

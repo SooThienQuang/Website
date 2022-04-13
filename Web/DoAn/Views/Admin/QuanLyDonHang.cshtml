@@ -1,0 +1,58 @@
+﻿@using DoAn.Models
+@model PagedList.IPagedList<HOADON>
+@using PagedList.Mvc
+
+@{
+    ViewBag.Title = "QuanLyDonHang";
+    Layout = "~/Views/Shared/_LayoutPageC.cshtml";
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+}
+
+@using (Html.BeginForm())
+{
+    <h2>Quản lý đơn hàng</h2>
+    <input type="datetime-local" name="thoigian1" />
+    <button class="btn btn-outline-success" type="submit">Lọc sản phẩm</button>
+    <br />
+}
+
+<br />
+<div class="card-group">
+    <div class="row">
+        @foreach (var item in Model)
+        {
+            <div class="col-sm-3">
+                <div class="card h-100">
+                    <a href="@Url.Action("Detail","Admin", new {ID=@item.MATB })" class="img-wrap">
+                        <img src="~/Assets/images/@item.THIETBI.HINHANH" style="width:100px;height:100px" />
+
+                    </a>
+
+                    <div class="card-body">
+                        <h4 class="card-title">@item.MATB</h4>
+                        <div class="card-text">
+                            <h5>@item.sodienthoai </h5>
+                            Địa chỉ giao hàng :@item.diachi 
+                        <h5> @item.quanHuyen </h5>
+                        <h5>@item.tinhTP</h5>
+                            
+                            <br />
+                            <h5>Số lượng :@item.soLuong</h5><br />
+                            <h4>Giá thành :@item.giaban</h4><br />
+                            <h2 style="color:red">Tổng tiền :@item.tongtien</h2>
+                        </div>
+
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">Đặt hàng 3 min trước</small><br />
+                        @Html.ActionLink("Xác nhận đơn hàng", "Details", new { id = item.maHD })
+                    </div>
+                </div>
+            </div>
+        }
+        @*Trang   @Html.PagedListPager(Model, page => Url.Action("Index", new {page}))*@
+    </div>
+</div>

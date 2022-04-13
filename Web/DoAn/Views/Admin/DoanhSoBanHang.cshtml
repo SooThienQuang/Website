@@ -1,0 +1,48 @@
+﻿@using DoAn.Models
+@model PagedList.IPagedList<HOADON>
+@using PagedList.Mvc
+
+@{
+    ViewBag.Title = "DoanhSoBanHang";
+    Layout = "~/Views/Shared/_LayoutPageC.cshtml";
+}
+@using (Html.BeginForm())
+{
+<h2>Thống kê doanh thu bán hàng</h2>
+<input type="datetime-local" name="thoigian1" />
+
+<input type="datetime-local" name="thoigian2" />
+ <button class="btn btn-outline-success" type="submit">Search</button>
+<br />
+}
+
+<br />
+<h1 style="color:red">Tổng doanh thu:@ViewBag.tongdoanhso</h1>
+<table style="table-layout">
+    <tr>
+        <th>Mã hóa đơn</th>
+        <th>
+            Mã thiết bị
+        </th>
+        <th>
+            Giá bán
+        </th>
+        <th>Số lượng bán</th>
+        <th>Thời gian bán</th>
+        <th>Tổng tiền</th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.maHD</td>
+            <td>@item.MATB</td>
+            <td>@item.giaban</td>
+            <td>@item.soLuong</td>
+            <td>@item.thoiGian</td>
+            <td>@item.tongtien</td>
+            <td>@Html.ActionLink("Chi tiết","Details",new { id=item.maHD})</td>
+        </tr>
+    }
+
+</table>

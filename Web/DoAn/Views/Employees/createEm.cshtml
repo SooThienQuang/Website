@@ -1,0 +1,106 @@
+﻿@model DoAn.Models.NhanVien
+
+@{
+    ViewBag.Title = "createEm";
+    Layout = "~/Views/Shared/_LayoutPageC.cshtml";
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+}
+<h2 style="color:red">@Html.ActionLink("Trang chủ", "Home", "Admin")</h2>
+<h2>Tạo mới nhân viên</h2>
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary(true)
+    <div class="container">
+        <table class="table" style="table-layout">
+            <tr>
+                <td>
+                    Mã nhân viên
+                </td>
+                <td>
+                    Giợi ý :@ViewBag.ma
+                    @Html.TextBoxFor(model => model.maNV, new { @class = "form-control" })
+                    @Html.ValidationMessageFor(model => model.maNV)
+                </td>
+
+            </tr>
+            <tr>
+                <td>Tên nhân viên</td>
+                <td>
+                    @Html.TextBoxFor(model => model.tenNV, new { @class = "form-control" })
+                    @Html.ValidationMessageFor(model => model.tenNV)
+                </td>
+            </tr>
+            <tr>
+                <td>Ngày sinh</td>
+                <td>
+                    @Html.TextBoxFor(model => model.ngaysinh, new { @class = "form-control", type = "date" })
+                    @Html.ValidationMessageFor(model => model.ngaysinh)
+                </td>
+            </tr>
+            <tr>
+                <td>Địa chỉ</td>
+                <td>
+                    @Html.TextBoxFor(model => model.diaChi, new { @class = "form-control" })
+                    @Html.ValidationMessageFor(model => model.diaChi)
+                </td>
+            </tr>
+            <tr>
+                <td>Ngày vào làm</td>
+                <td>
+                    @Html.TextBoxFor(model => model.ngayVaoLam, new { @class = "form-control", type = "date" })
+                    @Html.ValidationMessageFor(model => model.ngayVaoLam)
+                </td>
+            </tr>
+            <tr>
+                <td>Hình ảnh</td>
+                <td>
+                    @Html.TextBoxFor(model => model.hinhanh, new { @class = "form-control", type = "file" })
+                    @Html.ValidationMessageFor(model => model.hinhanh)
+                </td>
+            </tr>
+            <tr>
+                <td>Lương</td>
+                <td>
+                    @Html.TextBoxFor(model => model.luong, new { @class = "form-control" })
+                    @Html.ValidationMessageFor(model => model.luong)
+                </td>
+            </tr>
+            <tr>
+                <td>Email</td>
+                <td>
+                    @ViewBag.errEmail
+                    @Html.TextBoxFor(model => model.email, new { @class = "form-control", type = "email" })
+                    @Html.ValidationMessageFor(model => model.email)
+                </td>
+            </tr>
+            <tr>
+                <td>Số điện thoại</td>
+                <td>
+                    @Html.TextBoxFor(model => model.soDT, new { @class = "form-control" })
+                    @Html.ValidationMessageFor(model => model.soDT)
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Công việc
+                </td>
+                <td>
+                    @Html.DropDownListFor(model => model.maCV, null, "Chọn chức vụ", new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.maCV, "", new { @class = "text-danger" })
+                </td>
+            </tr>
+        </table>
+        <p>
+            <input type="submit" value="Create" />
+        </p>
+    </div>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>

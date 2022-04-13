@@ -1,0 +1,137 @@
+﻿@using DoAn.Models
+@model PagedList.IPagedList<THIETBI>
+@using PagedList.Mvc
+@{
+    ViewBag.Title = "Home";
+    Layout = "~/Views/Shared/_LayoutPageMaster.cshtml";
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+}
+@{
+    MVC_demoEntities db = new MVC_demoEntities();
+    List<Carosel> carosel = db.Carosels.Where(n=>n.MaChuDe==2).ToList();
+    List<THIETBI> tb = db.THIETBIs.Where(n => n.LOAITB == 2).ToList();
+    List<THIETBI> tb1 = db.THIETBIs.Where(n => n.LOAITB == 1).ToList();
+}
+<div class="container">
+    <div class="row" style="height:300px;">
+        <div class="col-sm-9">
+            <div id="carona" class="carousel w-100" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="~/Assets/images/crs1.png" class="d-block w-100" alt="Anh 1" />
+                    </div>
+                    @foreach (var item in carosel)
+                    {
+                        <div class="carousel-item">
+                            <img src="~/Assets/images/@item.hinhAnh" class="d-block w-100" alt="Anh 3" />
+                        </div>
+                    }
+                </div>
+                <a class="carousel-control-prev" href="#carona" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Priveous</span>
+                </a>
+
+                <a class="carousel-control-next" href="#carona" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+        <div class="col-sm-3">
+            <div class="row">
+                <div class="col">
+                    <img src="~/Assets/images/c2.png" style="width:100%" />
+                </div>
+                <div class="col">
+                    <img src="~/Assets/images/c3.png" style="width:100%" />
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <img src="~/Assets/images/c1.png" style="width:100%" />
+                </div>
+                <div class="col">
+                    <img src="~/Assets/images/c4.png" style="width:100%" />
+                </div>
+            </div>
+        </div>
+    </div>
+    @{
+        <div class="row">
+            @Html.ActionLink("Dưới 2 triệu", "LocTheoGiaSanPham", "SerchProducts", new { GiaSP1 = 0, GiaSP2 = 2000000 }, null)
+            <h1 style="width:20px;"></h1>
+            @Html.ActionLink("Từ 2 đến 4 triệu", "LocTheoGiaSanPham", "SerchProducts", new { GiaSP1 = 2000000, GiaSP2 = 4000000 }, null)
+            <h1 style="width:20px;"></h1>
+            @Html.ActionLink("Từ 4 đến 7 triệu", "LocTheoGiaSanPham", "SerchProducts", new { GiaSP1 = 4000000, GiaSP2 = 7000000 }, null)
+            <h1 style="width:20px;"></h1>
+            @Html.ActionLink("Từ 7 đến 13 triệu", "LocTheoGiaSanPham", "SerchProducts", new { GiaSP1 = 7000000, GiaSP2 = 13000000 }, null)
+            <h1 style="width:20px;"></h1>
+            @Html.ActionLink("Từ 13 đến 20 triệu", "LocTheoGiaSanPham", "SerchProducts", new { GiaSP1 = 13000000, GiaSP2 = 20000000 }, null)
+            <h1 style="width:20px;"></h1>
+            @Html.ActionLink("Trên 20 triệu", "LocTheoGiaSanPham", "SerchProducts", new { GiaSP1 = 20000000, GiaSP2 = 100000000 }, null)
+        </div>
+        if (ViewBag.loaiThietBi == 1)
+        {
+            <br />
+            <div class="row">
+                <button type="button" class="btn btn-outline-dark" onclick="location.href='@Url.Action("LocTheoHangSanXuat", "SerchProducts",new {TenHSX="iPhone"})'">Iphone</button>
+                <h1 style="width:20px;"></h1>
+                <button type="button" class="btn btn-outline-primary" onclick="location.href='@Url.Action("LocTheoHangSanXuat", "SerchProducts",new {TenHSX="Samsung"})'">Sam sung </button>
+                <h1 style="width:20px;"></h1>
+                <button type="button" class="btn btn-outline-secondary">Oppo </button>
+                <h1 style="width:20px;"></h1>
+                <button type="button" class="btn btn-outline-success">Vi vo</button>
+                <h1 style="width:20px;"></h1>
+                <button type="button" class="btn btn-outline-danger">Xiaomi </button>
+                <h1 style="width:20px;"></h1>
+                <button type="button" class="btn btn-outline-warning">Realme </button>
+                <h1 style="width:20px;"></h1>
+                <button type="button" class="btn btn-outline-info">Nokia </button>
+                <h1 style="width:20px;"></h1>
+                <button type="button" class="btn btn-outline-dark">OnePlus</button>
+            </div>
+
+        }
+       
+    }
+
+    <div class="row"></div>
+    <div class="card-group">
+        <div class="row">
+            @foreach (var item in Model)
+            {
+                <div class="col-sm-3">
+                    <div class="card h-100">
+
+                        <a href="@Url.Action("Detail", "Home", new {ID=@item.MATB })" class="img-wrap">
+                            <img src="~/Assets/images/@item.HINHANH" style="width:100%;height:220px" />
+                        </a>
+
+                        <div class="card-body">
+                            <h4 class="card-title">@item.MATB</h4>
+                            <div class="card-text">
+                                <h5>@item.TENTB </h5>
+                                <h3 style="color:red">@item.GIATHANH</h3>
+                            </div>
+                            <a href="@Url.Action("AddCart", "ShoppingCart", new {ID = @item.MATB })" onclick="return Submit()" class="img-wrap">
+                                <img src="~/Assets/images/addtocart.jpg" style="width:50px;height:50px" />
+                            </a>
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-muted"> Last update 3 mins ago</small>
+                        </div>
+                    </div>
+                </div>
+            }
+            @*Trang   @Html.PagedListPager(Model, page => Url.Action("Index", new {page}))*@
+        </div>
+    </div>
+    <div class="pagination" style="margin-left: 400px">
+        Page @(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber)
+        of @Model.PageCount   @Html.PagedListPager(Model, page => Url.Action("Home", new { page }))
+    </div>
+</div>

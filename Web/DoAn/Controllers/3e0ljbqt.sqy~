@@ -1,0 +1,22 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.Mvc;
+
+namespace DoAn.Models
+{
+    public class AdminController : Controller
+    {
+        //
+        // GET: /Admin/
+        MVC_demoEntities cn = new MVC_demoEntities();
+        BusThietBi b = new BusThietBi();
+        public ActionResult Home(int page = 1, int size = 4)
+        {
+            var db = b.listTB().ToPagedList(page, size);
+            return View(db);
+        }
+
+    }
+}

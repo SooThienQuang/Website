@@ -1,0 +1,72 @@
+C:\Users\MSI\Desktop\MSI-for Quang\CongNgheWeb\DoAnMT\DoAn\DoAn\bin\DoAn.dll.config
+C:\Users\MSI\Desktop\MSI-for Quang\CongNgheWeb\DoAnMT\DoAn\DoAn\bin\DoAn.dll
+C:\Users\MSI\Desktop\MSI-for Quang\CongNgheWeb\DoAnMT\DoAn\DoAn\bin\DoAn.pdb
+C:\Users\MSI\Desktop\MSI-for Quang\CongNgheWeb\DoAnMT\DoAn\DoAn\bin\Antlr3.Runtime.dll
+C:\Users\MSI\Desktop\MSI-for Quang\CongNgheWeb\DoAnMT\DoAn\DoAn\bin\EntityFramework.dll
+C:\Users\MSI\Desktop\MSI-for Quang\CongNgheWeb\DoAnMT\DoAn\DoAn\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\MSI\Desktop\MSI-for Quang\CongNgheWeb\DoAnMT\DoAn\DoAn\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+C:\Users\MSI\Desktop\MSI-for Quang\CongNgheWeb\DoAnMT\DoAn\DoAn\bin\Newtonsoft.Json.dll
+C:\Users\MSI\Desktop\MSI-for Quang\CongNgheWeb\DoAnMT\DoAn\DoAn\bin\System.Net.Http.Formatting.dll
+C:\Users\MSI\Desktop\MSI-for Quang\CongNgheWeb\DoAnMT\DoAn\DoAn\bin\System.Web.Http.dll
+C:\Users\MSI\Desktop\MSI-for Quang\CongNgheWeb\DoAnMT\DoAn\DoAn\bin\System.Web.Http.WebHost.dll
+C:\Users\MSI\Desktop\MSI-for Quang\CongNgheWeb\DoAnMT\DoAn\DoAn\bin\System.Web.Mvc.dll
+C:\Users\MSI\Desktop\MSI-for Quang\CongNgheWeb\DoAnMT\DoAn\DoAn\bin\System.Web.Optimization.dll
+C:\Users\MSI\Desktop\MSI-for Quang\CongNgheWeb\DoAnMT\DoAn\DoAn\bin\System.Web.Providers.dll
+C:\Users\MSI\Desktop\MSI-for Quang\CongNgheWeb\DoAnMT\DoAn\DoAn\bin\System.Web.Razor.dll
+C:\Users\MSI\Desktop\MSI-for Quang\CongNgheWeb\DoAnMT\DoAn\DoAn\bin\System.Web.WebPages.Deployment.dll
+C:\Users\MSI\Desktop\MSI-for Quang\CongNgheWeb\DoAnMT\DoAn\DoAn\bin\System.Web.WebPages.dll
+C:\Users\MSI\Desktop\MSI-for Quang\CongNgheWeb\DoAnMT\DoAn\DoAn\bin\System.Web.WebPages.Razor.dll
+C:\Users\MSI\Desktop\MSI-for Quang\CongNgheWeb\DoAnMT\DoAn\DoAn\bin\WebGrease.dll
+C:\Users\MSI\Desktop\MSI-for Quang\CongNgheWeb\DoAnMT\DoAn\DoAn\bin\EntityFramework.xml
+C:\Users\MSI\Desktop\MSI-for Quang\CongNgheWeb\DoAnMT\DoAn\DoAn\bin\Newtonsoft.Json.xml
+C:\Users\MSI\Desktop\MSI-for Quang\CongNgheWeb\DoAnMT\DoAn\DoAn\bin\System.Net.Http.Formatting.xml
+C:\Users\MSI\Desktop\MSI-for Quang\CongNgheWeb\DoAnMT\DoAn\DoAn\bin\System.Web.Http.xml
+C:\Users\MSI\Desktop\MSI-for Quang\CongNgheWeb\DoAnMT\DoAn\DoAn\bin\System.Web.Http.WebHost.xml
+C:\Users\MSI\Desktop\MSI-for Quang\CongNgheWeb\DoAnMT\DoAn\DoAn\bin\System.Web.Mvc.xml
+C:\Users\MSI\Desktop\MSI-for Quang\CongNgheWeb\DoAnMT\DoAn\DoAn\bin\System.Web.Razor.xml
+C:\Users\MSI\Desktop\MSI-for Quang\CongNgheWeb\DoAnMT\DoAn\DoAn\bin\System.Web.WebPages.xml
+C:\Users\MSI\Desktop\MSI-for Quang\CongNgheWeb\DoAnMT\DoAn\DoAn\bin\System.Web.WebPages.Deployment.xml
+C:\Users\MSI\Desktop\MSI-for Quang\CongNgheWeb\DoAnMT\DoAn\DoAn\bin\System.Web.WebPages.Razor.xml
+C:\Users\MSI\Desktop\MSI-for Quang\CongNgheWeb\DoAnMT\DoAn\DoAn\obj\Debug\DoAn.csprojResolveAssemblyReference.cache
+C:\Users\MSI\Desktop\MSI-for Quang\CongNgheWeb\DoAnMT\DoAn\DoAn\obj\Debug\DoAn.dll
+C:\Users\MSI\Desktop\MSI-for Quang\CongNgheWeb\DoAnMT\DoAn\DoAn\obj\Debug\DoAn.pdb
+C:\Users\MSI\Desktop\MSI-for Quang\CongNgheWeb\DoAnMT\DoAn\DoAn\bin\PagedList.dll
+C:\Users\MSI\Desktop\MSI-for Quang\CongNgheWeb\DoAnMT\DoAn\DoAn\bin\PagedList.Mvc.dll
+C:\Users\MSI\Desktop\MSI-for Quang\CongNgheWeb\DoAnMT\DoAn\DoAn\bin\PagedList.xml
+C:\Users\MSI\Desktop\MSI-for Quang\CongNgheWeb\DoAnMT\DoAn\DoAn\bin\PagedList.Mvc.xml
+C:\Users\MSI\Desktop\MVC_demo\DoAn\DoAn\bin\DoAn.dll.config
+C:\Users\MSI\Desktop\MVC_demo\DoAn\DoAn\bin\DoAn.dll
+C:\Users\MSI\Desktop\MVC_demo\DoAn\DoAn\bin\DoAn.pdb
+C:\Users\MSI\Desktop\MVC_demo\DoAn\DoAn\bin\Antlr3.Runtime.dll
+C:\Users\MSI\Desktop\MVC_demo\DoAn\DoAn\bin\EntityFramework.dll
+C:\Users\MSI\Desktop\MVC_demo\DoAn\DoAn\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\MSI\Desktop\MVC_demo\DoAn\DoAn\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+C:\Users\MSI\Desktop\MVC_demo\DoAn\DoAn\bin\Newtonsoft.Json.dll
+C:\Users\MSI\Desktop\MVC_demo\DoAn\DoAn\bin\PagedList.dll
+C:\Users\MSI\Desktop\MVC_demo\DoAn\DoAn\bin\PagedList.Mvc.dll
+C:\Users\MSI\Desktop\MVC_demo\DoAn\DoAn\bin\System.Net.Http.Formatting.dll
+C:\Users\MSI\Desktop\MVC_demo\DoAn\DoAn\bin\System.Web.Http.dll
+C:\Users\MSI\Desktop\MVC_demo\DoAn\DoAn\bin\System.Web.Http.WebHost.dll
+C:\Users\MSI\Desktop\MVC_demo\DoAn\DoAn\bin\System.Web.Mvc.dll
+C:\Users\MSI\Desktop\MVC_demo\DoAn\DoAn\bin\System.Web.Optimization.dll
+C:\Users\MSI\Desktop\MVC_demo\DoAn\DoAn\bin\System.Web.Providers.dll
+C:\Users\MSI\Desktop\MVC_demo\DoAn\DoAn\bin\System.Web.Razor.dll
+C:\Users\MSI\Desktop\MVC_demo\DoAn\DoAn\bin\System.Web.WebPages.Deployment.dll
+C:\Users\MSI\Desktop\MVC_demo\DoAn\DoAn\bin\System.Web.WebPages.dll
+C:\Users\MSI\Desktop\MVC_demo\DoAn\DoAn\bin\System.Web.WebPages.Razor.dll
+C:\Users\MSI\Desktop\MVC_demo\DoAn\DoAn\bin\WebGrease.dll
+C:\Users\MSI\Desktop\MVC_demo\DoAn\DoAn\bin\PagedList.xml
+C:\Users\MSI\Desktop\MVC_demo\DoAn\DoAn\bin\PagedList.Mvc.xml
+C:\Users\MSI\Desktop\MVC_demo\DoAn\DoAn\bin\EntityFramework.xml
+C:\Users\MSI\Desktop\MVC_demo\DoAn\DoAn\bin\Newtonsoft.Json.xml
+C:\Users\MSI\Desktop\MVC_demo\DoAn\DoAn\bin\System.Net.Http.Formatting.xml
+C:\Users\MSI\Desktop\MVC_demo\DoAn\DoAn\bin\System.Web.Http.xml
+C:\Users\MSI\Desktop\MVC_demo\DoAn\DoAn\bin\System.Web.Http.WebHost.xml
+C:\Users\MSI\Desktop\MVC_demo\DoAn\DoAn\bin\System.Web.Mvc.xml
+C:\Users\MSI\Desktop\MVC_demo\DoAn\DoAn\bin\System.Web.Razor.xml
+C:\Users\MSI\Desktop\MVC_demo\DoAn\DoAn\bin\System.Web.WebPages.xml
+C:\Users\MSI\Desktop\MVC_demo\DoAn\DoAn\bin\System.Web.WebPages.Deployment.xml
+C:\Users\MSI\Desktop\MVC_demo\DoAn\DoAn\bin\System.Web.WebPages.Razor.xml
+C:\Users\MSI\Desktop\MVC_demo\DoAn\DoAn\obj\Debug\DoAn.csprojResolveAssemblyReference.cache
+C:\Users\MSI\Desktop\MVC_demo\DoAn\DoAn\obj\Debug\DoAn.dll
+C:\Users\MSI\Desktop\MVC_demo\DoAn\DoAn\obj\Debug\DoAn.pdb

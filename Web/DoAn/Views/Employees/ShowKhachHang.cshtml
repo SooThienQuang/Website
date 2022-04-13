@@ -1,0 +1,43 @@
+﻿@model IEnumerable<DoAn.Models.account>
+
+@{
+    ViewBag.Title = "ShowKhachHang";
+    Layout = "~/Views/Shared/_LayoutPageC.cshtml";
+}
+
+<h2>ShowKhachHang</h2>
+
+<table>
+    <tr>
+        <th>
+          Họ và tên
+        </th>
+        <th>
+           email
+        </th>
+        <th>
+           password
+        </th>
+       
+        <th>Chức năng</th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            <input type="text" name="txt_email" value="@item.email" class="form-control" />
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.email)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.pass)
+        </td>
+        <td>
+
+            @Html.ActionLink("Delete", "Delete", new {  id=@item.email })
+        </td>
+    </tr>
+}
+
+</table>

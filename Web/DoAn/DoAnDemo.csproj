@@ -1,0 +1,702 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B5FE699C-29C0-48FB-9C95-370B5CCD9D0D}</ProjectGuid>
+    <ProjectTypeGuids>{E3E379DF-F4C6-4180-9B81-6769533ABE47};{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DoAn</RootNamespace>
+    <AssemblyName>DoAn</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <MvcBuildViews>false</MvcBuildViews>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <Use64BitIISExpress />
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.9.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="PagedList, Version=1.17.0.0, Culture=neutral, PublicKeyToken=abbb863e9397c5e1, processorArchitecture=MSIL">
+      <HintPath>..\packages\PagedList.1.17.0.0\lib\net40\PagedList.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="PagedList.Mvc, Version=4.5.0.0, Culture=neutral, PublicKeyToken=abbb863e9397c5e1, processorArchitecture=MSIL">
+      <HintPath>..\packages\PagedList.Mvc.4.5.0.0\lib\net40\PagedList.Mvc.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.5.0.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.Mvc.FixedDisplayModes, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.FixedDisplayModes.1.0.0\lib\net40\Microsoft.Web.Mvc.FixedDisplayModes.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http">
+    </Reference>
+    <Reference Include="System.Net.Http.Formatting, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.4.0.30506.0\lib\net40\System.Net.Http.Formatting.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest">
+    </Reference>
+    <Reference Include="System.Web.Http, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Core.4.0.30506.0\lib\net40\System.Web.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http.WebHost, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.WebHost.4.0.30506.0\lib\net40\System.Web.Http.WebHost.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.4.0.30506.0\lib\net40\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Optimization">
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.1.0.0\lib\net40\System.Web.Optimization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Providers">
+      <HintPath>..\packages\Microsoft.AspNet.Providers.Core.1.2\lib\net40\System.Web.Providers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Razor.2.0.30506.0\lib\net40\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.2.0.30506.0\lib\net40\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.2.0.30506.0\lib\net40\System.Web.WebPages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.2.0.30506.0\lib\net40\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="WebGrease">
+      <Private>True</Private>
+      <HintPath>..\packages\WebGrease.1.3.0\lib\WebGrease.dll</HintPath>
+    </Reference>
+    <Reference Include="Antlr3.Runtime">
+      <Private>True</Private>
+      <HintPath>..\packages\WebGrease.1.3.0\lib\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\BundleConfig.cs" />
+    <Compile Include="App_Start\FilterConfig.cs" />
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\CaroselController.cs" />
+    <Compile Include="Controllers\EmployeesController.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\PayMentController.cs" />
+    <Compile Include="Controllers\SerchProductsController.cs" />
+    <Compile Include="Controllers\ShoppingCartController.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\AdminController.cs" />
+    <Compile Include="Models\account.cs">
+      <DependentUpon>mydatabase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\BusThietBi.cs" />
+    <Compile Include="Models\Bus_Account.cs" />
+    <Compile Include="Models\Bus_ShoppingCart.cs" />
+    <Compile Include="Models\Carosel.cs">
+      <DependentUpon>mydatabase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\CHITIETTB.cs">
+      <DependentUpon>mydatabase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\chucVu.cs">
+      <DependentUpon>mydatabase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\HangSanXuat.cs">
+      <DependentUpon>mydatabase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\HOADON.cs">
+      <DependentUpon>mydatabase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\loaiTB.cs">
+      <DependentUpon>mydatabase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\MXN.cs" />
+    <Compile Include="Models\mydatabase.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>mydatabase.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\mydatabase.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>mydatabase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\mydatabase.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>mydatabase.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Models\NhanVien.cs">
+      <DependentUpon>mydatabase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\THIETBI.cs">
+      <DependentUpon>mydatabase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Assets\images\13.1.jpg" />
+    <Content Include="Assets\images\13.2.jpg" />
+    <Content Include="Assets\images\13.3.jpg" />
+    <Content Include="Assets\images\13.4.jpg" />
+    <Content Include="Assets\images\13.5.jpg" />
+    <Content Include="Assets\images\13.6.jpg" />
+    <Content Include="Assets\images\18164_c270_hd_webcam_refresh.png" />
+    <Content Include="Assets\images\50003670.jpg" />
+    <Content Include="Assets\images\800-200-800x200-58.png" />
+    <Content Include="Assets\images\800-200-800x200-59.png" />
+    <Content Include="Assets\images\800-200-800x200-74.png" />
+    <Content Include="Assets\images\800-200-800x200-76.png" />
+    <Content Include="Assets\images\A52s-800-200-800x200-2.png" />
+    <Content Include="Assets\images\acer1.png" />
+    <Content Include="Assets\images\Actions-document-edit-icon-48.png" />
+    <Content Include="Assets\images\Actions-edit-delete-icon-48.png" />
+    <Content Include="Assets\images\addtocart.jpg" />
+    <Content Include="Assets\images\addtocart.png" />
+    <Content Include="Assets\images\admin.jpg" />
+    <Content Include="Assets\images\aripod1.1.jpg" />
+    <Content Include="Assets\images\aripod1.2.jpg" />
+    <Content Include="Assets\images\aripod1.3.jpg" />
+    <Content Include="Assets\images\aripod1.jpg" />
+    <Content Include="Assets\images\b1.png" />
+    <Content Include="Assets\images\b2.png" />
+    <Content Include="Assets\images\b3.png" />
+    <Content Include="Assets\images\b4.png" />
+    <Content Include="Assets\images\b5.png" />
+    <Content Include="Assets\images\Balo 1.png" />
+    <Content Include="Assets\images\Balo 2.png" />
+    <Content Include="Assets\images\Balo 3.png" />
+    <Content Include="Assets\images\Balo 4.png" />
+    <Content Include="Assets\images\Balo 5.png" />
+    <Content Include="Assets\images\bangroll.png" />
+    <Content Include="Assets\images\banner1.png" />
+    <Content Include="Assets\images\banphim11 - Copy.jpg" />
+    <Content Include="Assets\images\banphim11.jpg" />
+    <Content Include="Assets\images\banphim12 - Copy.jpg" />
+    <Content Include="Assets\images\banphim12.jpg" />
+    <Content Include="Assets\images\banphim13 - Copy.jpg" />
+    <Content Include="Assets\images\banphim13.jpg" />
+    <Content Include="Assets\images\banphim14 - Copy.jpg" />
+    <Content Include="Assets\images\banphim14.jpg" />
+    <Content Include="Assets\images\banphim15 - Copy.jpg" />
+    <Content Include="Assets\images\banphim15.jpg" />
+    <Content Include="Assets\images\banphim16 - Copy.jpg" />
+    <Content Include="Assets\images\banphim16.jpg" />
+    <Content Include="Assets\images\banphim17 - Copy.jpg" />
+    <Content Include="Assets\images\banphim17.jpg" />
+    <Content Include="Assets\images\banphim18 - Copy.jpg" />
+    <Content Include="Assets\images\banphim18.jpg" />
+    <Content Include="Assets\images\banphim19 - Copy.jpg" />
+    <Content Include="Assets\images\banphim19.jpg" />
+    <Content Include="Assets\images\banphim20 - Copy.jpg" />
+    <Content Include="Assets\images\banphim20.jpg" />
+    <Content Include="Assets\images\bluetooth-airpods-pro-1.jpg" />
+    <Content Include="Assets\images\bluetooth-airpods-pro-3.jpg" />
+    <Content Include="Assets\images\bluetooth-airpods-pro-4.jpg" />
+    <Content Include="Assets\images\bluetooth-airpods-pro2.jpg" />
+    <Content Include="Assets\images\bluetooth-true-1.jpg" />
+    <Content Include="Assets\images\bluetooth-true-2.jpg" />
+    <Content Include="Assets\images\bluetooth-true-3.jpg" />
+    <Content Include="Assets\images\bluetooth-true-4.jpg" />
+    <Content Include="Assets\images\bluetooth-true-5.jpg" />
+    <Content Include="Assets\images\bluetooth-true-6.jpg" />
+    <Content Include="Assets\images\bluetooth-true1.jpg" />
+    <Content Include="Assets\images\bluetooth-true2.jpg" />
+    <Content Include="Assets\images\bluetooth-true23.jpg" />
+    <Content Include="Assets\images\c1.png" />
+    <Content Include="Assets\images\c2.png" />
+    <Content Include="Assets\images\c3.png" />
+    <Content Include="Assets\images\c4.png" />
+    <Content Include="Assets\images\card0.png" />
+    <Content Include="Assets\images\carosel1.jpg" />
+    <Content Include="Assets\images\carosel2.jpg" />
+    <Content Include="Assets\images\carosel3.png" />
+    <Content Include="Assets\images\carosel4.jpg" />
+    <Content Include="Assets\images\chuongtB.png" />
+    <Content Include="Assets\images\chuot0 - Copy.jpg" />
+    <Content Include="Assets\images\chuot0.jpg" />
+    <Content Include="Assets\images\chuot00 - Copy.jpg" />
+    <Content Include="Assets\images\chuot00.jpg" />
+    <Content Include="Assets\images\chuot01 - Copy.jpg" />
+    <Content Include="Assets\images\chuot01.jpg" />
+    <Content Include="Assets\images\chuot02 - Copy.jpg" />
+    <Content Include="Assets\images\chuot02.jpg" />
+    <Content Include="Assets\images\chuot03 - Copy.jpg" />
+    <Content Include="Assets\images\chuot03.jpg" />
+    <Content Include="Assets\images\chuot04 - Copy.jpg" />
+    <Content Include="Assets\images\chuot04.jpg" />
+    <Content Include="Assets\images\chuot05 - Copy.jpg" />
+    <Content Include="Assets\images\chuot05.jpg" />
+    <Content Include="Assets\images\chuot06 - Copy.jpg" />
+    <Content Include="Assets\images\chuot06.jpg" />
+    <Content Include="Assets\images\chuot07 - Copy.jpg" />
+    <Content Include="Assets\images\chuot07.jpg" />
+    <Content Include="Assets\images\chuot08 - Copy.jpg" />
+    <Content Include="Assets\images\chuot08.jpg" />
+    <Content Include="Assets\images\chuot09 - Copy.jpg" />
+    <Content Include="Assets\images\chuot09.jpg" />
+    <Content Include="Assets\images\chuot1 - Copy.jpg" />
+    <Content Include="Assets\images\chuot1.jpg" />
+    <Content Include="Assets\images\chuot10 - Copy.jpg" />
+    <Content Include="Assets\images\chuot10.jpg" />
+    <Content Include="Assets\images\chuot2 - Copy.jpg" />
+    <Content Include="Assets\images\chuot2.jpg" />
+    <Content Include="Assets\images\chuot3 - Copy.jpg" />
+    <Content Include="Assets\images\chuot3.jpg" />
+    <Content Include="Assets\images\clear.png" />
+    <Content Include="Assets\images\close.png" />
+    <Content Include="Assets\images\closeBlack.png" />
+    <Content Include="Assets\images\CPU Core i5.jpg" />
+    <Content Include="Assets\images\CPU Core i7.jpg" />
+    <Content Include="Assets\images\CPU intel core 2 duo.jpg" />
+    <Content Include="Assets\images\Cpu intel Core i5.jpg" />
+    <Content Include="Assets\images\crs1.png" />
+    <Content Include="Assets\images\crs2.png" />
+    <Content Include="Assets\images\crs3.png" />
+    <Content Include="Assets\images\crs4.png" />
+    <Content Include="Assets\images\crs5.png" />
+    <Content Include="Assets\images\crs6.png" />
+    <Content Include="Assets\images\crs7.png" />
+    <Content Include="Assets\images\crs8.png" />
+    <Content Include="Assets\images\datHang.png" />
+    <Content Include="Assets\images\dell.png" />
+    <Content Include="Assets\images\dellg3.1.jpg" />
+    <Content Include="Assets\images\dellg3.2.jpg" />
+    <Content Include="Assets\images\dellg3.3.jpg" />
+    <Content Include="Assets\images\dellg3.4.jpg" />
+    <Content Include="Assets\images\dellg3.5.jpg" />
+    <Content Include="Assets\images\dellg3.6.jpg" />
+    <Content Include="Assets\images\dongho1.png" />
+    <Content Include="Assets\images\dongho2.png" />
+    <Content Include="Assets\images\dongho3.png" />
+    <Content Include="Assets\images\download.png" />
+    <Content Include="Assets\images\e1.png" />
+    <Content Include="Assets\images\e2.png" />
+    <Content Include="Assets\images\fb.png" />
+    <Content Include="Assets\images\galaxytabs7.1.jpg" />
+    <Content Include="Assets\images\galaxytabs7.2.jpg" />
+    <Content Include="Assets\images\galaxytabs7.3.jpg" />
+    <Content Include="Assets\images\galaxytabs7.4.jpg" />
+    <Content Include="Assets\images\galaxytabs7.5.jpg" />
+    <Content Include="Assets\images\galaxyzfold3.png" />
+    <Content Include="Assets\images\gg.png" />
+    <Content Include="Assets\images\giohang.jpg" />
+    <Content Include="Assets\images\gop1.png" />
+    <Content Include="Assets\images\gop2.png" />
+    <Content Include="Assets\images\Hard Drive 1TB.png" />
+    <Content Include="Assets\images\Hard Drive 320GB.png" />
+    <Content Include="Assets\images\Hard Drive Kingston 120GB.png" />
+    <Content Include="Assets\images\Hard Drive Toshiba.png" />
+    <Content Include="Assets\images\heartred.png" />
+    <Content Include="Assets\images\heartwhite.png" />
+    <Content Include="Assets\images\hinhnull.png" />
+    <Content Include="Assets\images\hp-envy-13-1.jpg" />
+    <Content Include="Assets\images\hp-envy-13-2.jpg" />
+    <Content Include="Assets\images\hp-envy-13-3.jpg" />
+    <Content Include="Assets\images\hp-envy-13-4.jpg" />
+    <Content Include="Assets\images\hp-envy-13-5.jpg" />
+    <Content Include="Assets\images\hp-envy-13-6.jpg" />
+    <Content Include="Assets\images\hp-gaming-victus-1.jpg" />
+    <Content Include="Assets\images\hp-gaming-victus-16-2.jpg" />
+    <Content Include="Assets\images\hp-gaming-victus-16-3.jpg" />
+    <Content Include="Assets\images\hp-gaming-victus-16-4.jpg" />
+    <Content Include="Assets\images\hp-gaming-victus-16-5.jpg" />
+    <Content Include="Assets\images\hp-gaming-victus-16-6.jpg" />
+    <Content Include="Assets\images\huawei-matepad-1.jpg" />
+    <Content Include="Assets\images\huawei-matepad-11-xam-12.jpg" />
+    <Content Include="Assets\images\huawei-matepad-11-xam-13.jpg" />
+    <Content Include="Assets\images\huawei-matepad-11-xam-14.jpg" />
+    <Content Include="Assets\images\huawei-matepad-11-xam-2.jpg" />
+    <Content Include="Assets\images\huawei-matepad-11-xam-3.jpg" />
+    <Content Include="Assets\images\huawei-matepad-11-xam-5.jpg" />
+    <Content Include="Assets\images\huydon.jpg" />
+    <Content Include="Assets\images\iconaccount.png" />
+    <Content Include="Assets\images\iconphone.png" />
+    <Content Include="Assets\images\ipad-air-4-1.jpg" />
+    <Content Include="Assets\images\ipad-air-4-2.jpg" />
+    <Content Include="Assets\images\ipad-air-4-3.jpg" />
+    <Content Include="Assets\images\ipad-air-4-4.jpg" />
+    <Content Include="Assets\images\ipad-air-4-green-1.jpg" />
+    <Content Include="Assets\images\ipad-air-4-grey-3.jpg" />
+    <Content Include="Assets\images\ipad-air-4-silver-2.jpg" />
+    <Content Include="Assets\images\ipad-air-4-sky-blue-4.jpg" />
+    <Content Include="Assets\images\ipad-air-4-wifi-5.jpg" />
+    <Content Include="Assets\images\ipad-air-4-wifi-6.jpg" />
+    <Content Include="Assets\images\ipad-mini-6-3.jpg" />
+    <Content Include="Assets\images\ipad-mini-6-purple-1-1.jpg" />
+    <Content Include="Assets\images\ipad-mini-6-wifi-1-1.jpg" />
+    <Content Include="Assets\images\ipad-mini-6-wifi-4.jpg" />
+    <Content Include="Assets\images\ipad-mini-6-wifi-cellular-pink-1-1.jpg" />
+    <Content Include="Assets\images\ipad-mini-6-wifi-cellular-pink-2.jpg" />
+    <Content Include="Assets\images\ipad-mini-6r-purple-2.jpg" />
+    <Content Include="Assets\images\ipad-pro-2021-11-1.jpg" />
+    <Content Include="Assets\images\ipad-pro-2021-11-2.jpg" />
+    <Content Include="Assets\images\ipad-pro-m1-11-3.jpg" />
+    <Content Include="Assets\images\ipad-pro-m1-11-4.jpg" />
+    <Content Include="Assets\images\ipad-pro-m1-11-5.jpg" />
+    <Content Include="Assets\images\ipad-pro-m1-11-6.jpg" />
+    <Content Include="Assets\images\ipad.png" />
+    <Content Include="Assets\images\ipad2.png" />
+    <Content Include="Assets\images\ipadm1.1.jpg" />
+    <Content Include="Assets\images\ipadm1.2.jpg" />
+    <Content Include="Assets\images\ipadm1.3.jpg" />
+    <Content Include="Assets\images\ipadm1.4.jpg" />
+    <Content Include="Assets\images\ipadm1.5.jpg" />
+    <Content Include="Assets\images\ipadm1.6.jpg" />
+    <Content Include="Assets\images\ipadmini6.1.jpg" />
+    <Content Include="Assets\images\ipadmini6.1.jpg.1.jpg" />
+    <Content Include="Assets\images\iphone12mini.png" />
+    <Content Include="Assets\images\iphone12_den.jpg" />
+    <Content Include="Assets\images\iphone12_do.jpg" />
+    <Content Include="Assets\images\iphone12_trang.jpg" />
+    <Content Include="Assets\images\iphone12_violet.jpg" />
+    <Content Include="Assets\images\iphone12_xanh.png" />
+    <Content Include="Assets\images\iphone12_xanh_la.jpg" />
+    <Content Include="Assets\images\iphone13.png" />
+    <Content Include="Assets\images\iphone13t.png" />
+    <Content Include="Assets\images\KeyBoard Logitech.jpg" />
+    <Content Include="Assets\images\KeyBoard.png" />
+    <Content Include="Assets\images\laptop.png" />
+    <Content Include="Assets\images\lenovo-ideapad-1.jpg" />
+    <Content Include="Assets\images\lenovo-ideapad-2.jpg" />
+    <Content Include="Assets\images\lenovo-ideapad-3.jpg" />
+    <Content Include="Assets\images\lenovo-ideapad-4.jpg" />
+    <Content Include="Assets\images\lenovo-ideapad-5.jpg" />
+    <Content Include="Assets\images\lenovo-ideapad-6.jpg" />
+    <Content Include="Assets\images\Login-icon-48.png" />
+    <Content Include="Assets\images\login1111.png" />
+    <Content Include="Assets\images\loginaccount.jpg" />
+    <Content Include="Assets\images\logo.png" />
+    <Content Include="Assets\images\logo1.png" />
+    <Content Include="Assets\images\logo2.png" />
+    <Content Include="Assets\images\logo22.mp4" />
+    <Content Include="Assets\images\logochinh.png" />
+    <Content Include="Assets\images\logoshop.jpg" />
+    <Content Include="Assets\images\m.jpg" />
+    <Content Include="Assets\images\macbookm1.png" />
+    <Content Include="Assets\images\macm12020.1.jpg" />
+    <Content Include="Assets\images\macm12020.2.jpg" />
+    <Content Include="Assets\images\macm12020.3.jpg" />
+    <Content Include="Assets\images\macm12020.4.jpg" />
+    <Content Include="Assets\images\macm12020.5.jpg" />
+    <Content Include="Assets\images\macm12020.6.jpg" />
+    <Content Include="Assets\images\macpro.png" />
+    <Content Include="Assets\images\mastercard.png" />
+    <Content Include="Assets\images\Mouse Genius Blue.jpg" />
+    <Content Include="Assets\images\Mouse Genius.jpg" />
+    <Content Include="Assets\images\Mouse Logitech.jpg" />
+    <Content Include="Assets\images\msi.png" />
+    <Content Include="Assets\images\muahang.png" />
+    <Content Include="Assets\images\muangay.png" />
+    <Content Include="Assets\images\nhanvien.jpeg" />
+    <Content Include="Assets\images\nhanvien.jpg" />
+    <Content Include="Assets\images\nhanvienquanly.jpg" />
+    <Content Include="Assets\images\opporeno6.png" />
+    <Content Include="Assets\images\pad.png" />
+    <Content Include="Assets\images\padddddd.png" />
+    <Content Include="Assets\images\padding.png" />
+    <Content Include="Assets\images\padhead.png" />
+    <Content Include="Assets\images\phone.png" />
+    <Content Include="Assets\images\phoneicon.png" />
+    <Content Include="Assets\images\Pin Du Phong.jpg" />
+    <Content Include="Assets\images\Pin SamSung.png" />
+    <Content Include="Assets\images\Pin X-Mobile.jpg" />
+    <Content Include="Assets\images\quangdepchai.png" />
+    <Content Include="Assets\images\quanly.jpg" />
+    <Content Include="Assets\images\RAM 2GB.jpg" />
+    <Content Include="Assets\images\RAM 4GB DDR3.jpg" />
+    <Content Include="Assets\images\RAM 4GB.jpg" />
+    <Content Include="Assets\images\ram0 - Copy.png" />
+    <Content Include="Assets\images\ram0.png" />
+    <Content Include="Assets\images\s21.1.jpg" />
+    <Content Include="Assets\images\s21.2.jpg" />
+    <Content Include="Assets\images\s21.3.jpg" />
+    <Content Include="Assets\images\s21.4.jpg" />
+    <Content Include="Assets\images\s21.5.jpg" />
+    <Content Include="Assets\images\s21.6.jpg" />
+    <Content Include="Assets\images\s21.png" />
+    <Content Include="Assets\images\samsung-galaxy-tab-s7-1.jpg" />
+    <Content Include="Assets\images\samsung-galaxy-tab-s7-2.jpg" />
+    <Content Include="Assets\images\samsung-galaxy-tab-s7-3.jpg" />
+    <Content Include="Assets\images\samsung-galaxy-tab-s7-4.jpg" />
+    <Content Include="Assets\images\samsung-galaxy-tab-s7-5.jpg" />
+    <Content Include="Assets\images\samsung-galaxy-tab-s7-6.jpg" />
+    <Content Include="Assets\images\Save-icon-48.png" />
+    <Content Include="Assets\images\Skip-backward-icon2-48.png" />
+    <Content Include="Assets\images\Skip-forward-icon2-48.png" />
+    <Content Include="Assets\images\smarrtwatch.png" />
+    <Content Include="Assets\images\ssf3_1.jpg" />
+    <Content Include="Assets\images\ssf3_2.jpg" />
+    <Content Include="Assets\images\ssf3_3.jpg" />
+    <Content Include="Assets\images\ssf3_4.jpg" />
+    <Content Include="Assets\images\ssf3_5.jpg" />
+    <Content Include="Assets\images\ssf3_6.jpg" />
+    <Content Include="Assets\images\ss_f3.png" />
+    <Content Include="Assets\images\tablet.png" />
+    <Content Include="Assets\images\Tai Nghe JBL T450BT.jpg" />
+    <Content Include="Assets\images\tai-nghe-bluetooth-true-1.jpg" />
+    <Content Include="Assets\images\tai-nghe-bluetooth-true-2.jpg" />
+    <Content Include="Assets\images\tai-nghe-bluetooth-true-3.jpg" />
+    <Content Include="Assets\images\tai-nghe-bluetooth-true-4.jpg" />
+    <Content Include="Assets\images\tai-nghe-bluetooth-true-5.jpg" />
+    <Content Include="Assets\images\tai-nghe-bluetooth-true-6.jpg" />
+    <Content Include="Assets\images\tainghe%27.png" />
+    <Content Include="Assets\images\tainghe0 - Copy.png" />
+    <Content Include="Assets\images\tainghe0.png" />
+    <Content Include="Assets\images\themgiohang.png" />
+    <Content Include="Assets\images\timkiem.png" />
+    <Content Include="Assets\images\USB HP 16GB.jpg" />
+    <Content Include="Assets\images\USB HP 8GB .jpg" />
+    <Content Include="Assets\images\USB Teamgroup 8GB.png" />
+    <Content Include="Assets\images\USB Transcend 16GB.jpg" />
+    <Content Include="Assets\images\user.jpg" />
+    <Content Include="Assets\images\visa.png" />
+    <Content Include="Assets\images\zlip.png" />
+    <Content Include="Content\PagedList.css" />
+    <Content Include="Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="Content\themes\base\images\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <Content Include="Content\themes\base\images\ui-icons_222222_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_454545_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_888888_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="Content\themes\base\jquery-ui.css" />
+    <Content Include="Content\themes\base\jquery.ui.accordion.css" />
+    <Content Include="Content\themes\base\jquery.ui.all.css" />
+    <Content Include="Content\themes\base\jquery.ui.autocomplete.css" />
+    <Content Include="Content\themes\base\jquery.ui.base.css" />
+    <Content Include="Content\themes\base\jquery.ui.button.css" />
+    <Content Include="Content\themes\base\jquery.ui.core.css" />
+    <Content Include="Content\themes\base\jquery.ui.datepicker.css" />
+    <Content Include="Content\themes\base\jquery.ui.dialog.css" />
+    <Content Include="Content\themes\base\jquery.ui.progressbar.css" />
+    <Content Include="Content\themes\base\jquery.ui.resizable.css" />
+    <Content Include="Content\themes\base\jquery.ui.selectable.css" />
+    <Content Include="Content\themes\base\jquery.ui.slider.css" />
+    <Content Include="Content\themes\base\jquery.ui.tabs.css" />
+    <Content Include="Content\themes\base\jquery.ui.theme.css" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <Content Include="Content\themes\base\minified\images\ui-icons_222222_256x240.png" />
+    <Content Include="Content\themes\base\minified\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="Content\themes\base\minified\images\ui-icons_454545_256x240.png" />
+    <Content Include="Content\themes\base\minified\images\ui-icons_888888_256x240.png" />
+    <Content Include="Content\themes\base\minified\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="Content\themes\base\minified\jquery-ui.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.accordion.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.autocomplete.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.button.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.core.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.datepicker.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.dialog.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.progressbar.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.resizable.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.selectable.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.slider.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.tabs.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.theme.min.css" />
+    <Content Include="Global.asax" />
+    <Content Include="Content\Site.css" />
+    <Content Include="Assets\images\LinhKienMT.docx" />
+    <EntityDeploy Include="Models\mydatabase.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>mydatabase.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Models\mydatabase.edmx.diagram">
+      <DependentUpon>mydatabase.edmx</DependentUpon>
+    </Content>
+    <None Include="Scripts\jquery-1.8.2.intellisense.js" />
+    <Content Include="Models\mydatabase.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>mydatabase.edmx</DependentUpon>
+      <LastGenOutput>mydatabase.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\mydatabase.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>mydatabase.edmx</DependentUpon>
+      <LastGenOutput>mydatabase.cs</LastGenOutput>
+    </Content>
+    <Content Include="Scripts\jquery-1.8.2.js" />
+    <Content Include="Scripts\jquery-1.8.2.min.js" />
+    <None Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\jquery-ui-1.8.24.js" />
+    <Content Include="Scripts\jquery-ui-1.8.24.min.js" />
+    <Content Include="Scripts\jquery.unobtrusive-ajax.js" />
+    <Content Include="Scripts\jquery.unobtrusive-ajax.min.js" />
+    <Content Include="Scripts\jquery.validate.js" />
+    <Content Include="Scripts\jquery.validate.min.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Scripts\knockout-2.2.0.debug.js" />
+    <Content Include="Scripts\knockout-2.2.0.js" />
+    <Content Include="Scripts\modernizr-2.6.2.js" />
+    <Content Include="Scripts\_references.js" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Views\Web.config" />
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Shared\Error.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\Shared\_LayoutPageMaster.cshtml" />
+    <Content Include="Views\Home\Home.cshtml" />
+    <Content Include="Views\Account\Login.cshtml" />
+    <Content Include="Views\Account\Register.cshtml" />
+    <Content Include="Views\Home\Detail.cshtml" />
+    <Content Include="Views\Home\Products.cshtml" />
+    <Content Include="Views\ShoppingCart\AddCart.cshtml" />
+    <Content Include="Views\Home\Serch.cshtml" />
+    <Content Include="Views\ShoppingCart\ShowCart.cshtml" />
+    <Content Include="Views\PayMent\Pay.cshtml" />
+    <Content Include="Views\PayMent\DonHang.cshtml" />
+    <Content Include="Views\Admin\XLTB.cshtml" />
+    <Content Include="Views\Admin\Home.cshtml" />
+    <Content Include="Views\Admin\Details.cshtml" />
+    <Content Include="Views\Admin\XLChiTietTB.cshtml" />
+    <Content Include="Views\Employees\createEm.cshtml" />
+    <Content Include="Views\Employees\ShowEmployee.cshtml" />
+    <Content Include="Views\Carosel\showCarosel.cshtml" />
+    <Content Include="Views\Carosel\createCarosel.cshtml" />
+    <Content Include="Views\SerchProducts\LocTheoGiaSanPham.cshtml" />
+    <Content Include="Views\SerchProducts\Home.cshtml" />
+    <Content Include="Views\Shared\_LayoutPageC.cshtml" />
+    <Content Include="Views\Carosel\demo.cshtml" />
+    <Content Include="Views\ShoppingCart\deltetecart.cshtml" />
+    <Content Include="Views\Admin\DoanhSoBanHang.cshtml" />
+    <Content Include="Views\Admin\QuanLyDonHang.cshtml" />
+    <Content Include="Views\ProductPartial\HangSanXuatPartial.cshtml" />
+    <Content Include="Views\Admin\viewErr.cshtml" />
+    <Content Include="Views\Employees\ShowKhachHang.cshtml" />
+    <Content Include="Views\Employees\Delete.cshtml" />
+    <Content Include="Views\Admin\Update.cshtml" />
+    <Content Include="Views\SerchProducts\LocSP.cshtml" />
+    <Content Include="Views\SerchProducts\LocHangSX.cshtml" />
+    <Content Include="Views\SerchProducts\Navbar.cshtml" />
+    <Content Include="Views\Account\MaXacNhan.cshtml" />
+    <Content Include="Views\SerchProducts\LocTheoHangSanXuat.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <Target Name="MvcBuildViews" AfterTargets="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(WebProjectOutputDir)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>1051</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:1051/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target> -->
+</Project>

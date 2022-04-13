@@ -1,0 +1,195 @@
+C:\Users\MSI\Desktop\MVC_demo\DoAnDemo - Copy\DoAn\bin\DoAn.dll.config
+C:\Users\MSI\Desktop\MVC_demo\DoAnDemo - Copy\DoAn\bin\DoAn.dll
+C:\Users\MSI\Desktop\MVC_demo\DoAnDemo - Copy\DoAn\bin\DoAn.pdb
+C:\Users\MSI\Desktop\MVC_demo\DoAnDemo - Copy\DoAn\bin\Antlr3.Runtime.dll
+C:\Users\MSI\Desktop\MVC_demo\DoAnDemo - Copy\DoAn\bin\EntityFramework.dll
+C:\Users\MSI\Desktop\MVC_demo\DoAnDemo - Copy\DoAn\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\MSI\Desktop\MVC_demo\DoAnDemo - Copy\DoAn\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+C:\Users\MSI\Desktop\MVC_demo\DoAnDemo - Copy\DoAn\bin\Newtonsoft.Json.dll
+C:\Users\MSI\Desktop\MVC_demo\DoAnDemo - Copy\DoAn\bin\PagedList.dll
+C:\Users\MSI\Desktop\MVC_demo\DoAnDemo - Copy\DoAn\bin\PagedList.Mvc.dll
+C:\Users\MSI\Desktop\MVC_demo\DoAnDemo - Copy\DoAn\bin\System.Net.Http.Formatting.dll
+C:\Users\MSI\Desktop\MVC_demo\DoAnDemo - Copy\DoAn\bin\System.Web.Http.dll
+C:\Users\MSI\Desktop\MVC_demo\DoAnDemo - Copy\DoAn\bin\System.Web.Http.WebHost.dll
+C:\Users\MSI\Desktop\MVC_demo\DoAnDemo - Copy\DoAn\bin\System.Web.Mvc.dll
+C:\Users\MSI\Desktop\MVC_demo\DoAnDemo - Copy\DoAn\bin\System.Web.Optimization.dll
+C:\Users\MSI\Desktop\MVC_demo\DoAnDemo - Copy\DoAn\bin\System.Web.Providers.dll
+C:\Users\MSI\Desktop\MVC_demo\DoAnDemo - Copy\DoAn\bin\System.Web.Razor.dll
+C:\Users\MSI\Desktop\MVC_demo\DoAnDemo - Copy\DoAn\bin\System.Web.WebPages.Deployment.dll
+C:\Users\MSI\Desktop\MVC_demo\DoAnDemo - Copy\DoAn\bin\System.Web.WebPages.dll
+C:\Users\MSI\Desktop\MVC_demo\DoAnDemo - Copy\DoAn\bin\System.Web.WebPages.Razor.dll
+C:\Users\MSI\Desktop\MVC_demo\DoAnDemo - Copy\DoAn\bin\WebGrease.dll
+C:\Users\MSI\Desktop\MVC_demo\DoAnDemo - Copy\DoAn\bin\PagedList.xml
+C:\Users\MSI\Desktop\MVC_demo\DoAnDemo - Copy\DoAn\bin\PagedList.Mvc.xml
+C:\Users\MSI\Desktop\MVC_demo\DoAnDemo - Copy\DoAn\bin\EntityFramework.xml
+C:\Users\MSI\Desktop\MVC_demo\DoAnDemo - Copy\DoAn\bin\Newtonsoft.Json.xml
+C:\Users\MSI\Desktop\MVC_demo\DoAnDemo - Copy\DoAn\bin\System.Net.Http.Formatting.xml
+C:\Users\MSI\Desktop\MVC_demo\DoAnDemo - Copy\DoAn\bin\System.Web.Http.xml
+C:\Users\MSI\Desktop\MVC_demo\DoAnDemo - Copy\DoAn\bin\System.Web.Http.WebHost.xml
+C:\Users\MSI\Desktop\MVC_demo\DoAnDemo - Copy\DoAn\bin\System.Web.Mvc.xml
+C:\Users\MSI\Desktop\MVC_demo\DoAnDemo - Copy\DoAn\bin\System.Web.Razor.xml
+C:\Users\MSI\Desktop\MVC_demo\DoAnDemo - Copy\DoAn\bin\System.Web.WebPages.xml
+C:\Users\MSI\Desktop\MVC_demo\DoAnDemo - Copy\DoAn\bin\System.Web.WebPages.Deployment.xml
+C:\Users\MSI\Desktop\MVC_demo\DoAnDemo - Copy\DoAn\bin\System.Web.WebPages.Razor.xml
+C:\Users\MSI\Desktop\MVC_demo\DoAnDemo - Copy\DoAn\obj\Debug\DoAnDemo.csproj.CoreCompileInputs.cache
+C:\Users\MSI\Desktop\MVC_demo\DoAnDemo - Copy\DoAn\obj\Debug\DoAn.dll
+C:\Users\MSI\Desktop\MVC_demo\DoAnDemo - Copy\DoAn\obj\Debug\DoAn.pdb
+C:\Users\MSI\Desktop\MVC_demo\DoAnDemo - Copy\DoAn\obj\Debug\DoAnDemo.csproj.AssemblyReference.cache
+C:\Users\MSI\Desktop\Đồ án Công Nghệ Web MVC\DoAnDemo - Bản gốc\DoAn\bin\DoAn.dll.config
+C:\Users\MSI\Desktop\Đồ án Công Nghệ Web MVC\DoAnDemo - Bản gốc\DoAn\bin\DoAn.dll
+C:\Users\MSI\Desktop\Đồ án Công Nghệ Web MVC\DoAnDemo - Bản gốc\DoAn\bin\DoAn.pdb
+C:\Users\MSI\Desktop\Đồ án Công Nghệ Web MVC\DoAnDemo - Bản gốc\DoAn\bin\Antlr3.Runtime.dll
+C:\Users\MSI\Desktop\Đồ án Công Nghệ Web MVC\DoAnDemo - Bản gốc\DoAn\bin\EntityFramework.dll
+C:\Users\MSI\Desktop\Đồ án Công Nghệ Web MVC\DoAnDemo - Bản gốc\DoAn\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\MSI\Desktop\Đồ án Công Nghệ Web MVC\DoAnDemo - Bản gốc\DoAn\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+C:\Users\MSI\Desktop\Đồ án Công Nghệ Web MVC\DoAnDemo - Bản gốc\DoAn\bin\Newtonsoft.Json.dll
+C:\Users\MSI\Desktop\Đồ án Công Nghệ Web MVC\DoAnDemo - Bản gốc\DoAn\bin\PagedList.dll
+C:\Users\MSI\Desktop\Đồ án Công Nghệ Web MVC\DoAnDemo - Bản gốc\DoAn\bin\PagedList.Mvc.dll
+C:\Users\MSI\Desktop\Đồ án Công Nghệ Web MVC\DoAnDemo - Bản gốc\DoAn\bin\System.Net.Http.Formatting.dll
+C:\Users\MSI\Desktop\Đồ án Công Nghệ Web MVC\DoAnDemo - Bản gốc\DoAn\bin\System.Web.Http.dll
+C:\Users\MSI\Desktop\Đồ án Công Nghệ Web MVC\DoAnDemo - Bản gốc\DoAn\bin\System.Web.Http.WebHost.dll
+C:\Users\MSI\Desktop\Đồ án Công Nghệ Web MVC\DoAnDemo - Bản gốc\DoAn\bin\System.Web.Mvc.dll
+C:\Users\MSI\Desktop\Đồ án Công Nghệ Web MVC\DoAnDemo - Bản gốc\DoAn\bin\System.Web.Optimization.dll
+C:\Users\MSI\Desktop\Đồ án Công Nghệ Web MVC\DoAnDemo - Bản gốc\DoAn\bin\System.Web.Providers.dll
+C:\Users\MSI\Desktop\Đồ án Công Nghệ Web MVC\DoAnDemo - Bản gốc\DoAn\bin\System.Web.Razor.dll
+C:\Users\MSI\Desktop\Đồ án Công Nghệ Web MVC\DoAnDemo - Bản gốc\DoAn\bin\System.Web.WebPages.Deployment.dll
+C:\Users\MSI\Desktop\Đồ án Công Nghệ Web MVC\DoAnDemo - Bản gốc\DoAn\bin\System.Web.WebPages.dll
+C:\Users\MSI\Desktop\Đồ án Công Nghệ Web MVC\DoAnDemo - Bản gốc\DoAn\bin\System.Web.WebPages.Razor.dll
+C:\Users\MSI\Desktop\Đồ án Công Nghệ Web MVC\DoAnDemo - Bản gốc\DoAn\bin\WebGrease.dll
+C:\Users\MSI\Desktop\Đồ án Công Nghệ Web MVC\DoAnDemo - Bản gốc\DoAn\bin\Newtonsoft.Json.xml
+C:\Users\MSI\Desktop\Đồ án Công Nghệ Web MVC\DoAnDemo - Bản gốc\DoAn\bin\PagedList.xml
+C:\Users\MSI\Desktop\Đồ án Công Nghệ Web MVC\DoAnDemo - Bản gốc\DoAn\bin\PagedList.Mvc.xml
+C:\Users\MSI\Desktop\Đồ án Công Nghệ Web MVC\DoAnDemo - Bản gốc\DoAn\bin\EntityFramework.xml
+C:\Users\MSI\Desktop\Đồ án Công Nghệ Web MVC\DoAnDemo - Bản gốc\DoAn\bin\System.Net.Http.Formatting.xml
+C:\Users\MSI\Desktop\Đồ án Công Nghệ Web MVC\DoAnDemo - Bản gốc\DoAn\bin\System.Web.Http.xml
+C:\Users\MSI\Desktop\Đồ án Công Nghệ Web MVC\DoAnDemo - Bản gốc\DoAn\bin\System.Web.Http.WebHost.xml
+C:\Users\MSI\Desktop\Đồ án Công Nghệ Web MVC\DoAnDemo - Bản gốc\DoAn\bin\System.Web.Mvc.xml
+C:\Users\MSI\Desktop\Đồ án Công Nghệ Web MVC\DoAnDemo - Bản gốc\DoAn\bin\System.Web.Razor.xml
+C:\Users\MSI\Desktop\Đồ án Công Nghệ Web MVC\DoAnDemo - Bản gốc\DoAn\bin\System.Web.WebPages.xml
+C:\Users\MSI\Desktop\Đồ án Công Nghệ Web MVC\DoAnDemo - Bản gốc\DoAn\bin\System.Web.WebPages.Deployment.xml
+C:\Users\MSI\Desktop\Đồ án Công Nghệ Web MVC\DoAnDemo - Bản gốc\DoAn\bin\System.Web.WebPages.Razor.xml
+C:\Users\MSI\Desktop\Đồ án Công Nghệ Web MVC\DoAnDemo - Bản gốc\DoAn\obj\Debug\DoAnDemo.csproj.CoreCompileInputs.cache
+C:\Users\MSI\Desktop\Đồ án Công Nghệ Web MVC\DoAnDemo - Bản gốc\DoAn\obj\Debug\DoAn.dll
+C:\Users\MSI\Desktop\Đồ án Công Nghệ Web MVC\DoAnDemo - Bản gốc\DoAn\obj\Debug\DoAn.pdb
+C:\Users\SOO\Desktop\Đồ án Công Nghệ Web MVC\DoAnDemo - Bản gốc\DoAn\bin\DoAn.dll.config
+C:\Users\SOO\Desktop\Đồ án Công Nghệ Web MVC\DoAnDemo - Bản gốc\DoAn\bin\DoAn.dll
+C:\Users\SOO\Desktop\Đồ án Công Nghệ Web MVC\DoAnDemo - Bản gốc\DoAn\bin\DoAn.pdb
+C:\Users\SOO\Desktop\Đồ án Công Nghệ Web MVC\DoAnDemo - Bản gốc\DoAn\bin\Antlr3.Runtime.dll
+C:\Users\SOO\Desktop\Đồ án Công Nghệ Web MVC\DoAnDemo - Bản gốc\DoAn\bin\EntityFramework.dll
+C:\Users\SOO\Desktop\Đồ án Công Nghệ Web MVC\DoAnDemo - Bản gốc\DoAn\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\SOO\Desktop\Đồ án Công Nghệ Web MVC\DoAnDemo - Bản gốc\DoAn\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+C:\Users\SOO\Desktop\Đồ án Công Nghệ Web MVC\DoAnDemo - Bản gốc\DoAn\bin\Newtonsoft.Json.dll
+C:\Users\SOO\Desktop\Đồ án Công Nghệ Web MVC\DoAnDemo - Bản gốc\DoAn\bin\PagedList.dll
+C:\Users\SOO\Desktop\Đồ án Công Nghệ Web MVC\DoAnDemo - Bản gốc\DoAn\bin\PagedList.Mvc.dll
+C:\Users\SOO\Desktop\Đồ án Công Nghệ Web MVC\DoAnDemo - Bản gốc\DoAn\bin\System.Net.Http.Formatting.dll
+C:\Users\SOO\Desktop\Đồ án Công Nghệ Web MVC\DoAnDemo - Bản gốc\DoAn\bin\System.Web.Http.dll
+C:\Users\SOO\Desktop\Đồ án Công Nghệ Web MVC\DoAnDemo - Bản gốc\DoAn\bin\System.Web.Http.WebHost.dll
+C:\Users\SOO\Desktop\Đồ án Công Nghệ Web MVC\DoAnDemo - Bản gốc\DoAn\bin\System.Web.Mvc.dll
+C:\Users\SOO\Desktop\Đồ án Công Nghệ Web MVC\DoAnDemo - Bản gốc\DoAn\bin\System.Web.Optimization.dll
+C:\Users\SOO\Desktop\Đồ án Công Nghệ Web MVC\DoAnDemo - Bản gốc\DoAn\bin\System.Web.Providers.dll
+C:\Users\SOO\Desktop\Đồ án Công Nghệ Web MVC\DoAnDemo - Bản gốc\DoAn\bin\System.Web.Razor.dll
+C:\Users\SOO\Desktop\Đồ án Công Nghệ Web MVC\DoAnDemo - Bản gốc\DoAn\bin\System.Web.WebPages.Deployment.dll
+C:\Users\SOO\Desktop\Đồ án Công Nghệ Web MVC\DoAnDemo - Bản gốc\DoAn\bin\System.Web.WebPages.dll
+C:\Users\SOO\Desktop\Đồ án Công Nghệ Web MVC\DoAnDemo - Bản gốc\DoAn\bin\System.Web.WebPages.Razor.dll
+C:\Users\SOO\Desktop\Đồ án Công Nghệ Web MVC\DoAnDemo - Bản gốc\DoAn\bin\WebGrease.dll
+C:\Users\SOO\Desktop\Đồ án Công Nghệ Web MVC\DoAnDemo - Bản gốc\DoAn\bin\Newtonsoft.Json.xml
+C:\Users\SOO\Desktop\Đồ án Công Nghệ Web MVC\DoAnDemo - Bản gốc\DoAn\bin\PagedList.xml
+C:\Users\SOO\Desktop\Đồ án Công Nghệ Web MVC\DoAnDemo - Bản gốc\DoAn\bin\PagedList.Mvc.xml
+C:\Users\SOO\Desktop\Đồ án Công Nghệ Web MVC\DoAnDemo - Bản gốc\DoAn\bin\EntityFramework.xml
+C:\Users\SOO\Desktop\Đồ án Công Nghệ Web MVC\DoAnDemo - Bản gốc\DoAn\bin\System.Net.Http.Formatting.xml
+C:\Users\SOO\Desktop\Đồ án Công Nghệ Web MVC\DoAnDemo - Bản gốc\DoAn\bin\System.Web.Http.xml
+C:\Users\SOO\Desktop\Đồ án Công Nghệ Web MVC\DoAnDemo - Bản gốc\DoAn\bin\System.Web.Http.WebHost.xml
+C:\Users\SOO\Desktop\Đồ án Công Nghệ Web MVC\DoAnDemo - Bản gốc\DoAn\bin\System.Web.Mvc.xml
+C:\Users\SOO\Desktop\Đồ án Công Nghệ Web MVC\DoAnDemo - Bản gốc\DoAn\bin\System.Web.Razor.xml
+C:\Users\SOO\Desktop\Đồ án Công Nghệ Web MVC\DoAnDemo - Bản gốc\DoAn\bin\System.Web.WebPages.xml
+C:\Users\SOO\Desktop\Đồ án Công Nghệ Web MVC\DoAnDemo - Bản gốc\DoAn\bin\System.Web.WebPages.Deployment.xml
+C:\Users\SOO\Desktop\Đồ án Công Nghệ Web MVC\DoAnDemo - Bản gốc\DoAn\bin\System.Web.WebPages.Razor.xml
+C:\Users\SOO\Desktop\Đồ án Công Nghệ Web MVC\DoAnDemo - Bản gốc\DoAn\obj\Debug\DoAnDemo.csproj.CoreCompileInputs.cache
+C:\Users\SOO\Desktop\Đồ án Công Nghệ Web MVC\DoAnDemo - Bản gốc\DoAn\obj\Debug\DoAnDemo.csproj.CopyComplete
+C:\Users\SOO\Desktop\Đồ án Công Nghệ Web MVC\DoAnDemo - Bản gốc\DoAn\obj\Debug\DoAn.dll
+C:\Users\SOO\Desktop\Đồ án Công Nghệ Web MVC\DoAnDemo - Bản gốc\DoAn\obj\Debug\DoAn.pdb
+C:\Users\SOO\Desktop\Đồ án Công Nghệ Web MVC\DoAnDemo - Bản gốc\DoAn\obj\Debug\DoAnDemo.csproj.AssemblyReference.cache
+C:\Users\MSI\Desktop\Đồ án Công Nghệ Web MVC\DoAnDemo - Bản gốc\DoAn\obj\Debug\DoAnDemo.csprojAssemblyReference.cache
+C:\Users\MSI\Desktop\Đồ án Công Nghệ Web MVC\DoAnDemo - Bản gốc\DoAn\obj\Debug\DoAnDemo.csproj.CopyComplete
+C:\Users\MSI\OneDrive - Ho Chi Minh city University of Food Industry\Desktop\All\PhanMemThongMinh\DoAnDemo - Quang-Hạc-Quy-MuabanThietBiDienTu\DoAn\obj\Debug\DoAnDemo.csproj.AssemblyReference.cache
+C:\Users\MSI\OneDrive - Ho Chi Minh city University of Food Industry\Desktop\All\PhanMemThongMinh\DoAnDemo - Quang-Hạc-Quy-MuabanThietBiDienTu\DoAn\obj\Debug\DoAnDemo.csproj.CoreCompileInputs.cache
+C:\Users\MSI\OneDrive - Ho Chi Minh city University of Food Industry\Desktop\All\PhanMemThongMinh\DoAnDemo - Quang-Hạc-Quy-MuabanThietBiDienTu\DoAn\obj\Debug\DoAn.dll
+C:\Users\MSI\OneDrive - Ho Chi Minh city University of Food Industry\Desktop\All\PhanMemThongMinh\DoAnDemo - Quang-Hạc-Quy-MuabanThietBiDienTu\DoAn\obj\Debug\DoAn.pdb
+C:\Users\MSI\OneDrive - Ho Chi Minh city University of Food Industry\Desktop\All\PhanMemThongMinh\Web\DoAn\obj\Debug\DoAnDemo.csproj.AssemblyReference.cache
+C:\Users\MSI\OneDrive - Ho Chi Minh city University of Food Industry\Desktop\All\PhanMemThongMinh\Web\DoAn\obj\Debug\DoAnDemo.csproj.CoreCompileInputs.cache
+C:\Users\MSI\OneDrive - Ho Chi Minh city University of Food Industry\Desktop\All\PhanMemThongMinh\Web\DoAn\obj\Debug\DoAn.dll
+C:\Users\MSI\OneDrive - Ho Chi Minh city University of Food Industry\Desktop\All\PhanMemThongMinh\Web\DoAn\obj\Debug\DoAn.pdb
+C:\Users\MSI\OneDrive - Ho Chi Minh city University of Food Industry\Desktop\All\PhanMemThongMinh\Web\DoAn\bin\DoAn.dll.config
+C:\Users\MSI\OneDrive - Ho Chi Minh city University of Food Industry\Desktop\All\PhanMemThongMinh\Web\DoAn\bin\DoAn.dll
+C:\Users\MSI\OneDrive - Ho Chi Minh city University of Food Industry\Desktop\All\PhanMemThongMinh\Web\DoAn\bin\DoAn.pdb
+C:\Users\MSI\OneDrive - Ho Chi Minh city University of Food Industry\Desktop\All\PhanMemThongMinh\Web\DoAn\bin\Antlr3.Runtime.dll
+C:\Users\MSI\OneDrive - Ho Chi Minh city University of Food Industry\Desktop\All\PhanMemThongMinh\Web\DoAn\bin\EntityFramework.dll
+C:\Users\MSI\OneDrive - Ho Chi Minh city University of Food Industry\Desktop\All\PhanMemThongMinh\Web\DoAn\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\MSI\OneDrive - Ho Chi Minh city University of Food Industry\Desktop\All\PhanMemThongMinh\Web\DoAn\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+C:\Users\MSI\OneDrive - Ho Chi Minh city University of Food Industry\Desktop\All\PhanMemThongMinh\Web\DoAn\bin\Newtonsoft.Json.dll
+C:\Users\MSI\OneDrive - Ho Chi Minh city University of Food Industry\Desktop\All\PhanMemThongMinh\Web\DoAn\bin\PagedList.dll
+C:\Users\MSI\OneDrive - Ho Chi Minh city University of Food Industry\Desktop\All\PhanMemThongMinh\Web\DoAn\bin\PagedList.Mvc.dll
+C:\Users\MSI\OneDrive - Ho Chi Minh city University of Food Industry\Desktop\All\PhanMemThongMinh\Web\DoAn\bin\System.Net.Http.Formatting.dll
+C:\Users\MSI\OneDrive - Ho Chi Minh city University of Food Industry\Desktop\All\PhanMemThongMinh\Web\DoAn\bin\System.Web.Http.dll
+C:\Users\MSI\OneDrive - Ho Chi Minh city University of Food Industry\Desktop\All\PhanMemThongMinh\Web\DoAn\bin\System.Web.Http.WebHost.dll
+C:\Users\MSI\OneDrive - Ho Chi Minh city University of Food Industry\Desktop\All\PhanMemThongMinh\Web\DoAn\bin\System.Web.Mvc.dll
+C:\Users\MSI\OneDrive - Ho Chi Minh city University of Food Industry\Desktop\All\PhanMemThongMinh\Web\DoAn\bin\System.Web.Optimization.dll
+C:\Users\MSI\OneDrive - Ho Chi Minh city University of Food Industry\Desktop\All\PhanMemThongMinh\Web\DoAn\bin\System.Web.Providers.dll
+C:\Users\MSI\OneDrive - Ho Chi Minh city University of Food Industry\Desktop\All\PhanMemThongMinh\Web\DoAn\bin\System.Web.Razor.dll
+C:\Users\MSI\OneDrive - Ho Chi Minh city University of Food Industry\Desktop\All\PhanMemThongMinh\Web\DoAn\bin\System.Web.WebPages.Deployment.dll
+C:\Users\MSI\OneDrive - Ho Chi Minh city University of Food Industry\Desktop\All\PhanMemThongMinh\Web\DoAn\bin\System.Web.WebPages.dll
+C:\Users\MSI\OneDrive - Ho Chi Minh city University of Food Industry\Desktop\All\PhanMemThongMinh\Web\DoAn\bin\System.Web.WebPages.Razor.dll
+C:\Users\MSI\OneDrive - Ho Chi Minh city University of Food Industry\Desktop\All\PhanMemThongMinh\Web\DoAn\bin\WebGrease.dll
+C:\Users\MSI\OneDrive - Ho Chi Minh city University of Food Industry\Desktop\All\PhanMemThongMinh\Web\DoAn\bin\Newtonsoft.Json.xml
+C:\Users\MSI\OneDrive - Ho Chi Minh city University of Food Industry\Desktop\All\PhanMemThongMinh\Web\DoAn\bin\PagedList.xml
+C:\Users\MSI\OneDrive - Ho Chi Minh city University of Food Industry\Desktop\All\PhanMemThongMinh\Web\DoAn\bin\PagedList.Mvc.xml
+C:\Users\MSI\OneDrive - Ho Chi Minh city University of Food Industry\Desktop\All\PhanMemThongMinh\Web\DoAn\bin\EntityFramework.xml
+C:\Users\MSI\OneDrive - Ho Chi Minh city University of Food Industry\Desktop\All\PhanMemThongMinh\Web\DoAn\bin\System.Net.Http.Formatting.xml
+C:\Users\MSI\OneDrive - Ho Chi Minh city University of Food Industry\Desktop\All\PhanMemThongMinh\Web\DoAn\bin\System.Web.Http.xml
+C:\Users\MSI\OneDrive - Ho Chi Minh city University of Food Industry\Desktop\All\PhanMemThongMinh\Web\DoAn\bin\System.Web.Http.WebHost.xml
+C:\Users\MSI\OneDrive - Ho Chi Minh city University of Food Industry\Desktop\All\PhanMemThongMinh\Web\DoAn\bin\System.Web.Mvc.xml
+C:\Users\MSI\OneDrive - Ho Chi Minh city University of Food Industry\Desktop\All\PhanMemThongMinh\Web\DoAn\bin\System.Web.Razor.xml
+C:\Users\MSI\OneDrive - Ho Chi Minh city University of Food Industry\Desktop\All\PhanMemThongMinh\Web\DoAn\bin\System.Web.WebPages.xml
+C:\Users\MSI\OneDrive - Ho Chi Minh city University of Food Industry\Desktop\All\PhanMemThongMinh\Web\DoAn\bin\System.Web.WebPages.Deployment.xml
+C:\Users\MSI\OneDrive - Ho Chi Minh city University of Food Industry\Desktop\All\PhanMemThongMinh\Web\DoAn\bin\System.Web.WebPages.Razor.xml
+C:\Users\MSI\OneDrive - Ho Chi Minh city University of Food Industry\Desktop\All\PhanMemThongMinh\Web\DoAn\obj\Debug\DoAnDemo.csproj.CopyComplete
+D:\Web\DoAn\bin\DoAn.dll.config
+D:\Web\DoAn\bin\DoAn.dll
+D:\Web\DoAn\bin\DoAn.pdb
+D:\Web\DoAn\bin\Newtonsoft.Json.dll
+D:\Web\DoAn\bin\PagedList.xml
+D:\Web\DoAn\bin\PagedList.Mvc.xml
+D:\Web\DoAn\bin\EntityFramework.xml
+D:\Web\DoAn\bin\System.Net.Http.Formatting.xml
+D:\Web\DoAn\bin\System.Web.Http.xml
+D:\Web\DoAn\bin\System.Web.Http.WebHost.xml
+D:\Web\DoAn\bin\System.Web.Mvc.xml
+D:\Web\DoAn\bin\System.Web.Razor.xml
+D:\Web\DoAn\bin\System.Web.WebPages.xml
+D:\Web\DoAn\bin\System.Web.WebPages.Deployment.xml
+D:\Web\DoAn\bin\System.Web.WebPages.Razor.xml
+D:\Web\DoAn\obj\Debug\DoAnDemo.csproj.AssemblyReference.cache
+D:\Web\DoAn\obj\Debug\DoAnDemo.csproj.CoreCompileInputs.cache
+D:\Web\DoAn\obj\Debug\DoAnDemo.csproj.CopyComplete
+D:\Web\DoAn\obj\Debug\DoAn.dll
+D:\Web\DoAn\obj\Debug\DoAn.pdb
+D:\Website\Web\DoAn\bin\DoAn.dll.config
+D:\Website\Web\DoAn\bin\DoAn.dll
+D:\Website\Web\DoAn\bin\DoAn.pdb
+D:\Website\Web\DoAn\bin\Newtonsoft.Json.dll
+D:\Website\Web\DoAn\bin\PagedList.xml
+D:\Website\Web\DoAn\bin\PagedList.Mvc.xml
+D:\Website\Web\DoAn\bin\EntityFramework.xml
+D:\Website\Web\DoAn\bin\System.Net.Http.Formatting.xml
+D:\Website\Web\DoAn\bin\System.Web.Http.xml
+D:\Website\Web\DoAn\bin\System.Web.Http.WebHost.xml
+D:\Website\Web\DoAn\bin\System.Web.Mvc.xml
+D:\Website\Web\DoAn\bin\System.Web.Razor.xml
+D:\Website\Web\DoAn\bin\System.Web.WebPages.xml
+D:\Website\Web\DoAn\bin\System.Web.WebPages.Deployment.xml
+D:\Website\Web\DoAn\bin\System.Web.WebPages.Razor.xml
+D:\Website\Web\DoAn\obj\Debug\DoAnDemo.csproj.AssemblyReference.cache
+D:\Website\Web\DoAn\obj\Debug\DoAnDemo.csproj.CoreCompileInputs.cache
+D:\Website\Web\DoAn\obj\Debug\DoAnDemo.csproj.CopyComplete
+D:\Website\Web\DoAn\obj\Debug\DoAn.dll
+D:\Website\Web\DoAn\obj\Debug\DoAn.pdb

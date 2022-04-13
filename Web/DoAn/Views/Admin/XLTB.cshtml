@@ -1,0 +1,85 @@
+﻿@model DoAn.Models.THIETBI
+
+@{
+    Layout = "~/Views/Shared/_LayoutPageC.cshtml";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>XLTB</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <script src="~/Scripts/jquery-1.8.2.min.js"></script>
+    <script src="~/Scripts/jquery.validate.min.js"></script>
+    <script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
+
+    @using (Html.BeginForm())
+    {
+        @Html.AntiForgeryToken()
+        @Html.ValidationSummary(true)
+<table class="table" style="table-layout">
+    <tr>
+        <td>
+            Mã thiết bị
+        </td>
+        <td>
+            <input id="StudentName" name="txtmatb" type="number" value="@ViewBag.MATB" disabled="disabled" />
+        </td>
+
+    </tr>
+    <tr>
+        <td>Tên thiết bị</td>
+        <td>
+            @Html.TextBoxFor(model => model.TENTB, new { @class = "form-control" })
+            @Html.ValidationMessageFor(model => model.TENTB)
+        </td>
+    </tr>
+    <tr>
+        <td>Hãng sản xuất</td>
+        <td>
+            @Html.TextBoxFor(model => model.HANGSX, new { @class = "form-control" })
+            @Html.ValidationMessageFor(model => model.HANGSX)
+        </td>
+    </tr>
+    <tr>
+        <td>Giá thành</td>
+        <td>
+            @Html.TextBoxFor(model => model.GIATHANH, new { @class = "form-control" })
+            @Html.ValidationMessageFor(model => model.GIATHANH)
+        </td>
+    </tr>
+    <tr>
+        <td>Hình ảnh</td>
+        <td>
+            @Html.TextBoxFor(model => model.HINHANH, new { @class = "form-control", type = "file" })
+            @Html.ValidationMessageFor(model => model.HINHANH)
+        </td>
+    </tr>
+    <tr>
+        <td>Số lượng</td>
+        <td>
+            @Html.TextBoxFor(model => model.SOLUONG, new { @class = "form-control" })
+            @Html.ValidationMessageFor(model => model.SOLUONG)
+        </td>
+    </tr>
+    <tr>
+        <td>Loại thiết bị</td>
+        <td>
+            @Html.DropDownListFor(model => model.LOAITB, null, "Select type products", new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.LOAITB, "", new { @class = "text-danger" })
+        </td>
+    </tr>
+</table>
+        <input type="submit" value="Thêm mới" />
+       
+    }
+
+</body>
+</html>

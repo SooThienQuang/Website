@@ -1,0 +1,63 @@
+﻿@{
+    ViewBag.Title = "LocTheoHangSanXuat";
+    Layout = "~/Views/Shared/_LayoutPageMaster.cshtml";
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+}
+
+
+@using DoAn.Models
+@model PagedList.IPagedList<THIETBI>
+@using PagedList.Mvc
+<div class="container">
+        <div class="row">
+            @Html.ActionLink("Dưới 2 triệu", "LocTheoGiaSanPham", "SerchProducts", new { ma = @ViewData["mahsx"], GiaSP1 = 0, GiaSP2 = 2000000 }, null)
+            <h1 style="width:20px;"></h1>
+            @Html.ActionLink("Từ 2 đến 4 triệu", "LocTheoGiaSanPham", "SerchProducts", new { ma = @ViewData["mahsx"], GiaSP1 = 2000000, GiaSP2 = 4000000 }, null)
+            <h1 style="width:20px;"></h1>
+            @Html.ActionLink("Từ 4 đến 7 triệu", "LocTheoGiaSanPham", "SerchProducts", new { ma = @ViewData["mahsx"], GiaSP1 = 4000000, GiaSP2 = 7000000 }, null)
+            <h1 style="width:20px;"></h1>
+            @Html.ActionLink("Từ 7 đến 13 triệu", "LocTheoGiaSanPham", "SerchProducts", new { ma = @ViewData["mahsx"], GiaSP1 = 7000000, GiaSP2 = 13000000 }, null)
+            <h1 style="width:20px;"></h1>
+            @Html.ActionLink("Từ 13 đến 20 triệu", "LocTheoGiaSanPham", "SerchProducts", new { ma = @ViewData["mahsx"], GiaSP1 = 13000000, GiaSP2 = 20000000 }, null)
+            <h1 style="width:20px;"></h1>
+            @Html.ActionLink("Trên 20 triệu", "LocTheoGiaSanPham", "SerchProducts", new { ma = @ViewData["mahsx"], GiaSP1 = 20000000, GiaSP2 = 100000000 }, null)
+        </div>
+
+    <div class="row"></div>
+    <div class="card-group">
+        <div class="row">
+            @foreach (var item in Model)
+            {
+                <div class="col-sm-3">
+                    <div class="card h-100">
+
+                        <a href="@Url.Action("Detail", "Home", new {ID=@item.MATB })" class="img-wrap">
+                            <img src="~/Assets/images/@item.HINHANH" style="width:100%;height:220px" />
+                        </a>
+
+                        <div class="card-body">
+                            <h4 class="card-title">@item.MATB</h4>
+                            <div class="card-text">
+                                <h5>@item.TENTB </h5>
+                                <h3 style="color:red">@item.GIATHANH</h3>
+                            </div>
+
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-muted"> Last update 3 mins ago</small>
+                        </div>
+                    </div>
+                </div>
+            }
+            @*Trang   @Html.PagedListPager(Model, page => Url.Action("Index", new {page}))*@
+        </div>
+    </div>
+    <div class="pagination" style="margin-left: 400px">
+        Page @(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber)
+        of @Model.PageCount   @Html.PagedListPager(Model, page => Url.Action("Home", new { page }))
+    </div>
+</div>
+
